@@ -1,0 +1,72 @@
+body{
+	background-color: #b8c5d6;
+}
+
+#zag{
+	color:black
+}
+
+#zag2{
+	margin-top: 40px;
+	font-size: 35px;
+}
+
+#kartinka{
+	margin-bottom: 40px;
+}
+.ref{
+	color:black;
+	font-size:20px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:10px;
+	margin-bottom:20px;
+	border:1px solid black;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	background-color: #776aaf;
+}
+
+.ref:hover{
+	border:4px solid black;
+	margin-left: 17px;
+	margin-right: 17px;
+	background-color: yellow;
+}
+
+#main{
+	margin-top:40px;
+	background-color: #4800af;
+	color:white;
+	padding-left:6px;
+	padding-right:2px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.points{
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+
+.ref1{
+	color: blue;
+	text-decoration: none;
+}
+
+.ref1:hover{
+	color:red;
+	text-decoration:underline;
+}
+
+input{
+	font-size: 20px;
+}
+
+input:focus{
+	background-color: yellow;
+}
