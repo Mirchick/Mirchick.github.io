@@ -53,6 +53,10 @@ body{
 	margin-bottom:20px;
 }
 
+.points::first-letter{
+	font-size: 40px;
+}
+
 .ref1{
 	color: blue;
 	text-decoration: none;
