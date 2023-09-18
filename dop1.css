@@ -224,6 +224,11 @@ html{
 	border-radius: 10px;
 }
 
+body{
+	width: 100%;
+	max-width: 1840px;
+}
+
 
 
 
