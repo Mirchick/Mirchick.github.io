@@ -56,7 +56,8 @@ html{
     color: #689CD2;
 }
 
-#zag2{
+.zag2{
+	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 	font-size: 30px;
@@ -117,27 +118,15 @@ html{
 }
 
 #footer1{
-	font-size: 30px;
-	margin-top: 16px;
-	max-width: 986px;
-	margin-right: auto;
-	margin-left: auto;
-	color:#a9a5f9;
-	background-color: #1E0A5B;
-	border-radius: 10px;
-	padding: 7px;
-}
-
-#footer2{
-	font-size: 30px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	max-width: 180px;
-	margin-right: auto;
-	margin-left: auto;
+	font-size: 25px;
 	background-color: #8BA8FF;
-	padding: 7px;
+	box-sizing: border-box;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 8px;
 	border-radius: 10px;
+	text-align: center;
 }
 
 body{
@@ -183,4 +172,103 @@ body{
 	float: right;
 	max-width: 480px;
 	line-height: 25px;
+}
+
+thead{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+table{
+	width:1000px;
+	height: 1000px;
+	border-radius: 10px;
+}
+
+table,th,td{
+	border:1px solid black;
+	border-collapse: collapse;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+th{
+	font-size: 30px;
+	color:white;
+	background-color: #298ed6; 
+}
+
+td{
+	background-color: #8BA8FF;
+	font-size: 22px;
+	text-align: center;
+}
+
+h2{
+	max-width: 996px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 35px;
+	color:white;
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#mer,#ven,#mar,#upi,#sat,#ura,#nep{
+	padding: 4px;
+}
+
+.cvet{
+	height:34px;
+	background-color: white;
+	padding-top: 8px;
+}
+
+tr:first-child th:first-child{
+	border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child{
+	border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child{
+	border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child{
+	border-bottom-right-radius: 10px;
+}
+
+.soder{
+	font-family: Georgia;
+	font-size: 25px;
+	line-height: 45px;
+	box-sizing: border-box;
+	padding: 3px;
+	color:blue;	
+}
+
+ul{
+	border-radius: 10px;
+	list-style-type: square;
+	background-color: #8BA8FF;
+	box-sizing: border-box;
+    max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.tic{
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #8BA8FF;
+	padding: 7px;
+	border-radius: 10px;
+	text-align: center;
 }
