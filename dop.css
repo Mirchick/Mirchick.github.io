@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Russo+One&display=swap');
+
+html{
+	background-image: url(images/fon1.jpg);
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+}
+
+#loginButton{
+	position: fixed;
+	top:8px;
+	right:250px;
+}
+
+#zagolovok1{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 50px;
+	max-width: 1000px;
+	color: white;
+	font-family: Russo One;
+	background: url(images/fon7.jpg);
+	color:transparent;
+	-webkit-background-clip:text;
+	animation: animate 50s infinite linear;
+}
+
+@keyframes animate{
+	from{
+		background-position: 0 0;
+	}
+
+	to{
+		background-position: 100% 100%;
+	}
+}
+
+#image1{
+	border-radius:12px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#vstuplenie{
+	max-width: 988px;
+	font-size: 24px;
+	background-color: black;
+	padding: 6px;
+	color:#a9a5f9;
+	border-radius:12px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#youtube{
+    color:white;
+    text-decoration: none;
+}
+
+#youtube:hover{
+	color:red;
+	text-decoration: underline;
+}
+
+#soderzhanie{
+	max-width: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 30px;
+	color:black;
+	border:5px solid black;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #AABFFF;
+}
+
+.galereya{
+	max-width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	font-size: 30px;
+	color:black;
+	border:5px solid black;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #AABFFF;
+}
+
+#button1{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	padding: 4px;
+	border:2px solid white;
+	border-radius: 4px;
+}
+
+#button2{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 4px;
+	border:2px solid white;
+	border-radius: 4px;
+	background-color: #8BA8FF;
+}
+
+#button1:hover,#button2:hover{
+	border:2px solid black;
+}
+
+.blocks{
+	margin-top: 8px;
+	width: 986px;
+	height: 536px;
+	margin-right: auto;
+	margin-left: auto;
+	border:7px solid white;
+	border-radius: 8px;
+}
+
+.blocksDisplay{
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#footer1{
+	font-size: 25px;
+	background-color: #8BA8FF;
+	box-sizing: border-box;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 8px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+body{
+	width: 100%;
+	max-width: 2000px;
+}
+
+.imgs:hover{
+	transition: 0.8s;
+	transform: scale(2);
+	overflow-x: hidden;
+}
+
+.ssylkiPlanet{
+	font-size: 25px;
+	color:black;
+}
+
+.ssylkiPlanet:hover{
+	color:white;
+}
+
+#telescopes:hover,#hubble:hover,#nasa:hover{
+	color:blue;
+}
+
+.images{
+	height: 536px;
+	float: left;
+}
+
+.opisanieObjects{
+	height: 516px;
+	overflow-wrap: normal;
+	font-family: Georgia;
+	font-size: 20px;
+	background-color: #8BA8FF;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	float: right;
+	max-width: 480px;
+	line-height: 25px;
+}
+
+thead{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+table{
+	width:1000px;
+	height: 1000px;
+	border-radius: 10px;
+}
+
+table,th,td{
+	border:1px solid black;
+	border-collapse: collapse;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+th{
+	font-size: 30px;
+	color:white;
+	background-color: #298ed6; 
+}
+
+td{
+	background-color: #8BA8FF;
+	font-size: 22px;
+	text-align: center;
+	padding: 0px;
+}
+
+h2{
+	max-width: 996px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 35px;
+	color:white;
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.cvet{
+	height:34px;
+	background-color: white;
+	padding-top: 8px;
+}
+
+tr:first-child th:first-child{
+	border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child{
+	border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child{
+	border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child{
+	border-bottom-right-radius: 10px;
+}
+
+.soderzhanieObjects{
+	font-family: Georgia;
+	font-size: 25px;
+	line-height: 45px;
+	box-sizing: border-box;
+	padding: 3px;
+	color:blue;	
+}
+
+ul{
+	border-radius: 10px;
+	list-style-type: square;
+	background-color: #8BA8FF;
+	box-sizing: border-box;
+    max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.someFacts{
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #8BA8FF;
+	padding: 7px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#blockSsylok{
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	z-index: 2;
+}
+
+#telescopes,#hubble,#nasa{
+    font-size: 22px;
+    color: white;
+}
+
+.planets{
+	padding: 5px;
+}
+
+.facts{
+	font-size: 25px;
+	max-width: 982px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 7px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	border:2px solid black;
+}

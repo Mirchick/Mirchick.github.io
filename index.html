@@ -3,93 +3,97 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Космос и его тайны</title>
-	<link rel="stylesheet" type="text/css" href="dop3.css">
+	<link rel="stylesheet" type="text/css" href="dop.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon1.png">
 </head>
 <body>
-	<h1 id = 'zag1'><b>Добро пожаловать на наш сайт, уважаемый любитель космоса!</b></h1>
-	<div id='sdvig'>
-		<a id ="refs1" target="blank" href="https://www.telescope.ru/category/telescopes/?etext=2202.luqpMX	r6uvIIf3Wb6TwzMgqQhbl1vwBX41a0uCjpKwpkdmV6ZmttaHF2bHJpZ2lh.e9905eba9f9840e12b2205ca5df5eca0d9656afa	&yclid=5384643042969196589">Telescopes</a>
-		<a id ="refs2" target="blank" href="https://hubblesite.org/home">Hubble</a>
-		<a id ="refs3" target="blank" href="https://www.nasa.gov">NASA</a>
+	<h1 id = 'zagolovok1'><b>Добро пожаловать на наш сайт, уважаемый любитель космоса!</b></h1>
+	<div id='blockSsylok'>
+		<a id ="telescopes" target="blank" href="https://www.telescope.ru/category/telescopes/?etext=2202.luqpMX	r6uvIIf3Wb6TwzMgqQhbl1vwBX41a0uCjpKwpkdmV6ZmttaHF2bHJpZ2lh.e9905eba9f9840e12b2205ca5df5eca0d9656afa	&yclid=5384643042969196589">Telescopes</a>
+		<a id ="hubble" target="blank" href="https://hubblesite.org/home">Hubble</a>
+		<a id ="nasa" target="blank" href="https://www.nasa.gov">NASA</a>
 	</div>
-	<p id = 'text1'><i>Как Вы догадываетесь, наша жизнь это нечто большее, чем бесконечный цикл "Работа-Сон".<br>Вокруг нас есть множество интересных загадок, одна из которых заметна ночью. Если Вы<br> забудете про сон, выйдете на незагрязнённое светом пространство, то сможете насладиться
+	<div><button onclick='askUserName()'id = 'loginButton' type='button'>Войти</button></div>
+	<p id = 'vstuplenie'><i>Как Вы догадываетесь, наша жизнь это нечто большее, чем бесконечный цикл "Работа-Сон".<br>Вокруг нас есть множество интересных загадок, одна из которых заметна ночью. Если Вы<br> забудете про сон, выйдете на незагрязнённое светом пространство, то сможете насладиться
 	бесконечно манящей вселенной. На этом сайте Вы сможете найти информацию про наиболее<br> 
 	заметные и интересные объекты нашего звездного неба, которые либо видны невооруженным <br>
 	глазом, либо легко находятся даже большефокусным окуляром телескопа-рефлектора.<br> 
 	Разумеется, фотографии не всегда верно и четко отображают действительность, поэтому<br>
-	для глубины и полноты ощущений рекомендуем Вам приобрести свой телескоп. Для этого можете перейти по <a id="ref1" href="https://www.youtube.com/results?search_query=%D1%82%D0%BE%D0%BF+%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%B2+2023" target="blank">ссылке</a> и посмотреть подробные разборы лучших телескопов на любой<br> вкус и кошелёк. Выбрав телескоп, можно начинать свои личные наблюдения!</i></p>
-	<img id = 'img1' width='1000px' src="images/img1.jpg">
-	<h1 class='zag2'>Содержание:</h1>
+	для глубины и полноты ощущений рекомендуем Вам приобрести свой телескоп. Для этого можете перейти по <a id="youtube" href="https://www.youtube.com/results?search_query=%D1%82%D0%BE%D0%BF+%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%B2+2023" target="blank">ссылке</a> и посмотреть подробные разборы лучших телескопов на любой<br> вкус и кошелёк. Выбрав телескоп, можно начинать свои личные наблюдения!</i></p>
+	<img id = 'image1' width='1000px' src="images/img1.jpg">
+	<h1 id ='soderzhanie'>Содержание:</h1>
 	<ul>
-	    <li><a class='soder' href="#t1">Галерея</a></li>
-	    <li><a class='soder' href="#t2">Планетные характеристики</a></li>
-	    <li><a class='soder' href="#t3">Любопытные факты</a></li>
+	    <li><a class='soderzhanieObjects' href="#t1">Галерея</a></li>
+	    <li><a class='soderzhanieObjects' href="#t2">Планетные характеристики</a></li>
+	    <li><a class='soderzhanieObjects' href="#t3">Любопытные факты</a></li>
 	</ul>
-	<h1 id='t1' class='zag2'>Галерея</h1>
-	<div class = 'block1'>
-		<div class = 'block11'>
-			<img class = 'imgs' id = 'img2' width = '486px' src="images/img2.jpg">
-		</div>
-		<p class = 'text2'> <b><a class = 'refs' href="https://phasesmoon.com" target="blank">Луна</a></b>. Естественный спутник нашей планеты безоговорочно является самым доступным для наблюдения объектом 	ночного (а иногда даже дневного) неба. Луну можно легко найти и рассмотреть даже в телескоп с 	небольшой апертурой. На фотографии слева Вы можете увидеть изображение спутника, снятое днём с 	увеличение всего лишь 36 крат через телескоп с апертурой 114мм. Для некоторых видеть Луну на 	необычном голубом фоне дневного неба даже более интересно, чем в ночи, зрелище завораживающее. 	Расстояние до луны в среднем около 380 тысяч километров, а её диаметр 3474 километра. Масса Луны в 	81 раз меньше земной, а плотность меньше в 1,67 раза. </p>
-		<button onclick='changeColor11()' id='button11' type='button'>белый</button>
-		<button onclick='changeColor12()' id='button12' type='button'>голубой</button>
+	<div id = 't1' class='galereya'> Галерея
+		<div><button onclick='changeColor1()'id = 'button1' type='button'>белый фон</button></div>
+		<div><button onclick='changeColor2()'id = 'button2' type='button'>голубой фон</button></div>
 	</div>
-	<div class = 'block2'>
-		<div class = 'block11'>
-			<img class = 'imgs' id = 'img3' width = '486px' src="images/img3.jpg">
+	<div class = 'blocks'>
+		<div class = 'blocksDisplay'>
+			<img class = 'images' width = '486px' src="images/img2.jpg">
 		</div>
-		<p class = 'text3'> <b><a class = 'refs' href='https://kipmu.ru/venera' target="blank">Венера</a></b>. Сейчас без проблем можно видеть венеру ранним утром до восхода Солнца. По яркости она уступает только Солнцу и Луне, поэтому невооружённым глазом она видна, как очень яркая звезда, встающая на востоке. Однако если посмотреть на неё в телескоп, то можно разглядеть характерную месяцеобразную форму близжайшей к нашей Земле планеты. Из-за относительного положения Венеры увидеть её полностью освещённой получится только из космоса. Расстояние от Земли до Венеры меняется от 38 до 261 млн. километров, поэтому в некоторые промежутки времени она поражает нас своей яркостью больше обычного. Интересно то, что Венеру видно даже после восхода Солнца ещё некоторое время! </p>
-		<button onclick='changeColor21()' id='button21' type='button'>белый</button>
-		<button onclick='changeColor22()' id='button22' type='button'>голубой</button>
+		<p class = 'opisanieObjects'> <b><a class = 'ssylkiPlanet' href="https://phasesmoon.com" target="blank">Луна</a></b>. Естественный спутник нашей планеты безоговорочно является самым доступным для наблюдения объектом 	ночного (а иногда даже дневного) неба. Луну можно легко найти и рассмотреть даже в телескоп с 	небольшой апертурой. На фотографии слева Вы можете увидеть изображение спутника, снятое днём с 	увеличение всего лишь 36 крат через телескоп с апертурой 114мм. Для некоторых видеть Луну на 	необычном голубом фоне дневного неба даже более интересно, чем в ночи, зрелище завораживающее. 	Расстояние до луны в среднем около 380 тысяч километров, а её диаметр 3474 километра. Масса Луны в 	81 раз меньше земной, а плотность меньше в 1,67 раза. </p>
 	</div>
-	<div class = 'block3'>
-		<div class = 'block11'>
-			<img class = 'imgs' id = 'img4' width = '486px' src="images/img4.jpg">
+	<div class = 'blocks'>
+		<div class = 'blocksDisplay'>
+			<img class = 'images' width = '486px' src="images/img3.jpg">
+		</div>
+		<p class = 'opisanieObjects'> <b><a class = 'ssylkiPlanet' href='https://kipmu.ru/venera' target="blank">Венера</a></b>. Сейчас без проблем можно видеть венеру ранним утром до восхода Солнца. По яркости она уступает только Солнцу и Луне, поэтому невооружённым глазом она видна, как очень яркая звезда, встающая на востоке. Однако если посмотреть на неё в телескоп, то можно разглядеть характерную месяцеобразную форму близжайшей к нашей Земле планеты. Из-за относительного положения Венеры увидеть её полностью освещённой получится только из космоса. Расстояние от Земли до Венеры меняется от 38 до 261 млн. километров, поэтому в некоторые промежутки времени она поражает нас своей яркостью больше обычного. Интересно то, что Венеру видно даже после восхода Солнца ещё некоторое время! </p>
+	</div>
+	<div class = 'blocks'>
+		<div class = 'blocksDisplay'>
+			<img class = 'images' width = '486px' src="images/img4.jpg">
 	    </div>
-		<p class= 'text4'> <b><a class = 'refs' href="https://kipmu.ru/yupiter" target="blank">Юпитер</a></b>. Наиболее вдохновляющий объкт на небе для меня это Юпитер Когда в телескоп его находишь в первый раз, думаешь, что смотришь на нашу солнечную систему, правда, очень необычную. Юпитер в телескоп виден с 4-6 своими самыми большими спутниками, очень сильная картина. При увеличении даже 36 крат уже видно его полосы, а при увеличении 180 крат можно увидеть большое красное пятно. Хоть расстояние до Юпитера и варьируется от 588 до 967 млн. километров, диаметр его в среднем около 140 тыс. километров, именно из-за его размера наблюдать за ним можно без каких либо усилий. Яркость Юпитера чуть меньше, чем яркость той же венеры, но он остается одним из самых ярких объектов ночного неба. </p>
-		<button onclick='changeColor31()' id='button31' type='button'>белый</button>
-		<button onclick='changeColor32()' id='button32' type='button'>голубой</button>
+		<p class= 'opisanieObjects'> <b><a class = 'ssylkiPlanet' href="https://kipmu.ru/yupiter" target="blank">Юпитер</a></b>. Наиболее вдохновляющий объкт на небе для меня это Юпитер Когда в телескоп его находишь в первый раз, думаешь, что смотришь на нашу солнечную систему, правда, очень необычную. Юпитер в телескоп виден с 4-6 своими самыми большими спутниками, очень сильная картина. При увеличении даже 36 крат уже видно его полосы, а при увеличении 180 крат можно увидеть большое красное пятно. Хоть расстояние до Юпитера и варьируется от 588 до 967 млн. километров, диаметр его в среднем около 140 тыс. километров, именно из-за его размера наблюдать за ним можно без каких либо усилий. Яркость Юпитера чуть меньше, чем яркость той же венеры, но он остается одним из самых ярких объектов ночного неба. </p>
 	</div>
-	<div class = 'block4'>
-		<div class = 'block11'>
-			<img class = 'imgs' id = 'img5' width = '486px' src="images/img5.jpg">
+	<div class = 'blocks'>
+		<div class = 'blocksDisplay'>
+			<img class = 'images' width = '486px' src="images/img5.jpg">
 		</div>
-		<p class = 'text5'> <b><a class = 'refs' href="https://kipmu.ru/saturn" target="blank">Сатурн</a></b>. Для многих самым загадочным объектом, который видно невооруженным глазом, является Сатурн. И это неудивительно, ведь его кольца при изучении в телескоп просто завораживают Хоть Сатурн и дальше, и меньше, чем Юпитер, но его довольно легко "поймать" объективом даже не самого апертурного телескопа Разумеется, чем больше диаметр объектива, тем больше можно увидеть подробностей, например, щель Кассини между кольцами планеты. Диаметр этого газового гиганта почти в 10 раз больше диаметра Земли, а его среднее расстояние до нас около 1400 млн. километров. Что касается яркости, то у Сатурна она обычно невелика, если не знать, где он расположен, то его можно легко принять за тусклую звездочку, а то и совсем не заметить. </p>
-		<button onclick='changeColor41()' id='button41' type='button'>белый</button>
-		<button onclick='changeColor42()' id='button42' type='button'>голубой</button>
+		<p class = 'opisanieObjects'> <b><a class = 'ssylkiPlanet' href="https://kipmu.ru/saturn" target="blank">Сатурн</a></b>. Для многих самым загадочным объектом, который видно невооруженным глазом, является Сатурн. И это неудивительно, ведь его кольца при изучении в телескоп просто завораживают Хоть Сатурн и дальше, и меньше, чем Юпитер, но его довольно легко "поймать" объективом даже не самого апертурного телескопа Разумеется, чем больше диаметр объектива, тем больше можно увидеть подробностей, например, щель Кассини между кольцами планеты. Диаметр этого газового гиганта почти в 10 раз больше диаметра Земли, а его среднее расстояние до нас около 1400 млн. километров. Что касается яркости, то у Сатурна она обычно невелика, если не знать, где он расположен, то его можно легко принять за тусклую звездочку, а то и совсем не заметить. </p>
 	</div>
 	<p id = 'footer1'> Разумеется, в космосе ещё много всего интересного: галактики, туманности, звёздные скопления и многое другоe! Именно поэтому сайт будет обновляться и загружать новые фотографии наблюдения нашего неба.</p>
 	<h2 id='t2'>Таблица планетных характеристик</h2>
-	<div id='krug'>
+	<div id='tablitsa'>
 		<table>
 			<tr>
 				<th width="150px">Планета</th><th>Масса</th><th>Радиус</th><th>Расстояние до Земли</th>	<th>Температура</th>
 			</tr>
 			<tr>
-				<td id = 'mer'><img src='images/mer.png' width="150px" height="150px"></td><td><div class='cvet'>	3,3*10^23 кг</div></td><td><div class='cvet'>2439 км</div></td><td><div class='cvet'>	91,6 млн. км</div></td><td><div class='cvet'>167°С</div></td>
+				<td class = 'planets'><img src='images/mer.png' width="150px" height="150px"></td><td><div class='cvet'>	3,3*10^23 кг</div></td><td><div class='cvet'>2439 км</div></td><td><div class='cvet'>	91,6 млн. км</div></td><td><div class='cvet'>167°С</div></td>
 			</tr>
 			<tr>
-				<td id = 'ven'><img src='images/ven.png' width="150px" height="150px"></td><td><div class='cvet'>	4,9*10^24 кг</div></td><td><div class='cvet'>6052 км</div></td><td><div class='cvet'>	41,4 млн. км</div></td><td><div class='cvet'>464°С</div></td>
+				<td class = 'planets'><img src='images/ven.png' width="150px" height="150px"></td><td><div class='cvet'>	4,9*10^24 кг</div></td><td><div class='cvet'>6052 км</div></td><td><div class='cvet'>	41,4 млн. км</div></td><td><div class='cvet'>464°С</div></td>
 			</tr>
 			<tr>
-				<td id = 'mar'><img src='images/mar.png' width="150px" height="150px"></td><td><div class='cvet'>	6,44*10^23 кг</div></td><td><div class='cvet'>3386 км</div></td><td><div class='cvet'>	78,3 млн. км</div></td><td><div class='cvet'>-65°С</div></td>
+				<td class = 'planets'><img src='images/mar.png' width="150px" height="150px"></td><td><div class='cvet'>	6,44*10^23 кг</div></td><td><div class='cvet'>3386 км</div></td><td><div class='cvet'>	78,3 млн. км</div></td><td><div class='cvet'>-65°С</div></td>
 			</tr>
 			<tr>
-			<td id = 'jup'><img src='images/jup.png' width="150px" height="150px"></td><td><div class='cvet'>1,9*10^27 кг</div></td><td><div class='cvet'>71492 км</div></td><td><div class='cvet'>628,4 млн. км</div></td><td><div class='cvet'>-110°С</div></td>
+			<td class = 'planets'><img src='images/jup.png' width="150px" height="150px"></td><td><div class='cvet'>1,9*10^27 кг</div></td><td><div class='cvet'>71492 км</div></td><td><div class='cvet'>628,4 млн. км</div></td><td><div class='cvet'>-110°С</div></td>
 			</tr>
 			<tr>
-				<td id = 'sat'><img src='images/sat.png' width="150px" height="150px"></td><td><div class='cvet'>	5,68*10^26 кг</div></td><td><div class='cvet'>60268 км</div></td><td><div class='cvet'>	1277,4 млн. км</div></td><td><div class='cvet'>-140°С</div></td>
+				<td class = 'planets'><img src='images/sat.png' width="150px" height="150px"></td><td><div class='cvet'>	5,68*10^26 кг</div></td><td><div class='cvet'>60268 км</div></td><td><div class='cvet'>	1277,4 млн. км</div></td><td><div class='cvet'>-140°С</div></td>
 			</tr>
 			<tr>
-				<td id = 'ura'><img src='images/ura.png' width="150px" height="150px"></td><td><div class='cvet'>	8,7*10^25 кг</div></td><td><div class='cvet'>25559 км</div></td><td><div class='cvet'>	2721,4 млн. км</div></td><td><div class='cvet'>-195°С</div></td>
+				<td class = 'planets'><img src='images/ura.png' width="150px" height="150px"></td><td><div class='cvet'>	8,7*10^25 кг</div></td><td><div class='cvet'>25559 км</div></td><td><div class='cvet'>	2721,4 млн. км</div></td><td><div class='cvet'>-195°С</div></td>
 			</tr>
 			<tr>
-				<td id = 'nep'><img src='images/nep.png' width="150px" height="150px"></td><td><div class='cvet'>	1,03*10^26 кг</div></td><td><div class='cvet'>24764 км</div></td><td><div class='cvet'>	4347,4 млн. км</div></td><td><div class='cvet'>-200°С</div></td>
+				<td class = 'planets'><img src='images/nep.png' width="150px" height="150px"></td><td><div class='cvet'>	1,03*10^26 кг</div></td><td><div class='cvet'>24764 км</div></td><td><div class='cvet'>	4347,4 млн. км</div></td><td><div class='cvet'>-200°С</div></td>
 			</tr>
 		</table>
-		<h1 class='tic' id='t3'>Любопытные факты</h1>
+		<h1 id= 't3' class='someFacts'>Любопытные факты</h1>
+		<div class="facts">На Марсе находится самый большой вулкан в Солнечной системе — гора Олимп</div>
+		<div class="facts">Кольца Сатурна состоят из множества мелких кусков льда и камней разного размера: от пыли до размеров гор</div>
+		<div class="facts">Из всех планет нашей системы только Венера вращается в направлении, противоположном направлению вращения всех остальных планет</div>
+		<div class="facts">Из-за близости к Солнцу у Меркурия есть хвост, как у кометы</div>
+		<div class="facts">Нептун – первая планета, открытая благодаря математическим расчётам, а не визуальным наблюдениям</div>
+		<div class="facts">Самая плотная атмосфера принадлежит также Венере, на её поверхности атмосферное давление в 92 раза выше, чем на Земле</div>
+		<div class="facts">Магнитное поле Юпитера сильнее магнитного поля Земли примерно в 2000 раз</div>
+		<div class="facts">На Венере случаются дожди, состоящие из серной кислоты</div>
 	</div>
-	<script src="dviz1.js"></script>
+	<script src="dviz.js"></script>
 </body>
 </html>
