@@ -1,27 +1,104 @@
-html{
-	background-image: url(images/img6.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Russo+One&display=swap');
+
+#docMain{
+	background-image: url(images/fon1.jpg);
 	background-attachment: fixed;
 	-webkit-background-size:cover;
 }
 
+#docMoon{
+	background-image: url(images/moonBG.png);
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+}
 
-#zag1{
+#docVenus{
+	background-image: url(images/venusBG.png);
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+}
+
+#docJupiter{
+	background-image: url(images/jupiterBG.png);
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+}
+
+#docSaturn{
+	background-image: url(images/saturnBG.jpg);
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+}
+
+#navigation{
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 0px;
+}
+
+#inline{
+	padding-inline-start:0;
+}
+
+.strs{
+	display: inline-block;
+	text-align: center;
+	width: 198px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: white;
+	font-size: 20px;
+	border:1px solid black;
+}
+
+.stras{
+	color:black;
+	text-decoration: none;
+}
+
+.strs:hover{
+	background-color: #6997D3;
+}
+
+#loginButton{
+	position: fixed;
+	top:8px;
+	right:250px;
+}
+
+#zagolovok1{
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	max-width: 1000px;
 	color: white;
+	font-family: Russo One;
+	background: url(images/fon7.jpg);
+	color:transparent;
+	-webkit-background-clip:text;
+	animation: animate 50s infinite linear;
 }
 
-#img1{
+@keyframes animate{
+	from{
+		background-position: 0 0;
+	}
+
+	to{
+		background-position: 100% 100%;
+	}
+}
+
+#image1{
 	border-radius:12px;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-#text1{
+#vstuplenie{
 	max-width: 988px;
 	font-size: 24px;
 	background-color: black;
@@ -32,46 +109,68 @@ html{
 	margin-left: auto;
 }
 
-#ref1{
+#youtube{
     color:white;
     text-decoration: none;
 }
 
-#ref1:hover{
+#youtube:hover{
 	color:red;
 	text-decoration: underline;
 }
 
-#sdvig{
-	position: fixed;
-	right: 5px;
-	top: 5px;
-}
-
-#refs1,#refs2,#refs3{
-	max-width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-    font-size: 22px;
-    color: #689CD2;
-}
-
-.zag2{
-	position: relative;
+#soderzhanie{
+	max-width: 250px;
 	margin-right: auto;
 	margin-left: auto;
 	font-size: 30px;
 	color:black;
 	border:5px solid black;
-	max-width: 250px;
 	padding: 10px;
 	text-align: center;
 	border-radius: 10px;
 	background-color: #AABFFF;
 }
 
-.block1{
-	display: block;
+.galereya{
+	max-width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	font-size: 30px;
+	color:black;
+	border:5px solid black;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #AABFFF;
+}
+
+#button1{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	padding: 4px;
+	border:2px solid white;
+	border-radius: 4px;
+}
+
+#button2{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 4px;
+	border:2px solid white;
+	border-radius: 4px;
+	background-color: #8BA8FF;
+}
+
+#button1:hover,#button2:hover{
+	border:2px solid black;
+}
+
+.blocks{
+	margin-top: 8px;
 	width: 986px;
 	height: 536px;
 	margin-right: auto;
@@ -80,41 +179,10 @@ html{
 	border-radius: 8px;
 }
 
-.block11{
+.blocksDisplay{
+	z-index: 1;
 	display: inline-block;
 	overflow: hidden;
-}
-
-.block2{
-	margin-top: 8px;
-	display: block;
-	width: 986px;
-	height: 536px;
-	margin-right: auto;
-	margin-left: auto;
-	border:7px solid white;
-	border-radius: 8px;
-}
-
-.block3{
-	margin-top: 8px;
-	display: block;
-	width: 986px;
-	height: 536px;
-	margin-right: auto;
-	margin-left: auto;
-	border:7px solid white;
-	border-radius: 8px;
-}
-
-.block4{
-	margin-top: 8px;
-	width: 986px;
-	height: 536px;
-	margin-right: auto;
-	margin-left: auto;
-	border:7px solid white;
-	border-radius: 8px;
 }
 
 #footer1{
@@ -134,31 +202,31 @@ body{
 	max-width: 2000px;
 }
 
-.imgs:hover{
+.images:hover{
 	transition: 0.8s;
 	transform: scale(2);
 	overflow-x: hidden;
 }
 
-.refs{
+.ssylkiPlanet{
 	font-size: 25px;
 	color:black;
 }
 
-.refs:hover{
+.ssylkiPlanet:hover{
 	color:white;
 }
 
-#refs1:hover,#refs2:hover,#refs3:hover{
-	color:white;
+#telescopes:hover,#hubble:hover,#nasa:hover{
+	color:blue;
 }
 
-#img2,#img3,#img4,#img5{
+.images{
 	height: 536px;
 	float: left;
 }
 
-#text2,#text3,#text4,#text5{
+.opisanieObjects{
 	height: 516px;
 	overflow-wrap: normal;
 	font-family: Georgia;
@@ -202,6 +270,7 @@ td{
 	background-color: #8BA8FF;
 	font-size: 22px;
 	text-align: center;
+	padding: 0px;
 }
 
 h2{
@@ -216,10 +285,6 @@ h2{
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 5px;
-}
-
-#mer,#ven,#mar,#upi,#sat,#ura,#nep{
-	padding: 4px;
 }
 
 .cvet{
@@ -244,7 +309,7 @@ tr:last-child td:last-child{
 	border-bottom-right-radius: 10px;
 }
 
-.soder{
+.soderzhanieObjects{
 	font-family: Georgia;
 	font-size: 25px;
 	line-height: 45px;
@@ -253,7 +318,7 @@ tr:last-child td:last-child{
 	color:blue;	
 }
 
-ul{
+#soderzhanie1{
 	border-radius: 10px;
 	list-style-type: square;
 	background-color: #8BA8FF;
@@ -263,7 +328,7 @@ ul{
 	margin-left: auto;
 }
 
-.tic{
+.someFacts{
 	max-width: 350px;
 	margin-left: auto;
 	margin-right: auto;
@@ -271,4 +336,33 @@ ul{
 	padding: 7px;
 	border-radius: 10px;
 	text-align: center;
+}
+
+#blockSsylok{
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	z-index: 2;
+}
+
+#telescopes,#hubble,#nasa{
+    font-size: 22px;
+    color: white;
+}
+
+.planets{
+	padding: 5px;
+}
+
+.facts{
+	font-size: 25px;
+	max-width: 982px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 7px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	border:2px solid black;
 }
