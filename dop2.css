@@ -1,0 +1,73 @@
+#zagolovok{
+  font-size: 40px;
+  border: 4px solid white;
+  max-width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  background-image: url('fon2.jpg');
+  border-radius: 10px;
+  text-align: center;
+}
+
+#record{
+  font-size: 30px;
+}
+
+body{
+  background-image: url('fon.jpg');
+}
+
+#center,#record{
+  text-align: center;
+}
+
+.start{
+  font-size: 20px;
+  background-color:#FFA940;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#letter{
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 90px;
+  border: 6px solid white;
+  padding: 10px;
+  text-align: center;
+  background-color: #DC8BCF;
+  border-radius: 50%;
+}
+
+#opisanie{
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.diver{
+  text-align: center;
+}
+
+#time{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#vvod{
+  font-size: 70px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#finish{
+  font-size: 70px;
+  text-align: center;
+}
