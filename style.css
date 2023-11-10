@@ -1,0 +1,12 @@
+#igra{
+	display: block;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	border:2px solid black;
+}
+
+body{
+	background-color: lightpink;
+}
