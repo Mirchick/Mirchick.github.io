@@ -6,7 +6,7 @@ let hero = {x:230,y:776};/*герой и его координаты*/
 let arrow = {};/*стрела и её координаты*/
 let count = 0;/*счёт*/
 let end = 3;/*конец игры*/
-let enemySpeed = 1;
+let enemySpeed = 2;
 ctx = igra.getContext('2d');/*2д игра*/ 
 
 const img1 = new Image();/*создание картинки врага*/
