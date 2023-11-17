@@ -1,12 +1,104 @@
-#igra{
-	display: block;
-	max-width: 500px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 40px;
-	border:2px solid black;
+#size{
+    width: 1000px;
+    height: 1100px;
+    background-image: linear-gradient(black, red);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-body{
-	background-color: lightpink;
+#mesto{
+    height: 20px;
+}
+
+#name{
+    box-sizing: border-box;
+    font-size: 60px;
+    max-width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-image: linear-gradient(yellow, white);
+    color: black;
+    padding: 8px;
+}
+
+#input{
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    font-size: 35px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+
+#button{
+    box-sizing: border-box;
+    display: block;
+    font-size: 30px;
+    width: 400px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.zametka{
+    box-sizing: border-box;
+    font-size: 30px;
+    border: 1px solid black;
+    width: 800px;
+    height: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    background-color: white;
+    padding-left: 5px;
+    border-radius: 8px;
+}
+
+.remove{
+    background-color: red;
+    width: 30px;
+    height: 25px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.done{
+    width: 30px;
+    height: 25px;
+    background: green;
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+    color: white;
+    padding-bottom: 5px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.gifa{
+    text-decoration: line-through;
+}
+
+#net{
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
 }
