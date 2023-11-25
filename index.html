@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href = 'style.css' rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn English</title>
+  <link href="styles.css" rel = 'stylesheet'>
 </head>
 <body>
-    <p id = 'name'><b>Дата и время</b></p>
-    <div id = 'smallDiv'>
-        <p id="nameSmall">12:12:12</p>
-        <div id = 'smallerDiv'>
-            <button onclick = 'fullDate()' class = 'buttons' id="full">Полная</button>
-            <button onclick = 'dateOnly()' class = 'buttons' id="date">Дата</button>
-            <button onclick = 'timeOnly()' class = 'buttons' id="time">Время</button>
-        </div>
+  <nav>
+    <ul id = 'flex'>
+      <a class = 'refs' href="index.html"><li class = 'active'>Главная</li></a>
+      <a class = 'refs' href="words.html"><li id = 'navElem2' class="navElems">Учить слова</li></a>
+      <a class = 'refs' href="test.html"><li class="navElems">Тест</li></a>
+    </ul>
+  </nav>
+  <div id = 'container'>
+    <p id = 'p1' class = 'noselect'>Чем удобен наш сайт по изучению английского языка:</p>
+    <div class = 'div1'>
+      <p id = 'primer1' class = 'noselect'></p>
+      <p id = 'des1' class = 'noselect'>Вы можете узнать значение любого незнакомого слова с помощью клика по карточке. Попробуйте кликнуть по карточке слева</p>
     </div>
-    <script src = 'java.js'></script>
+  </div>
+
+  <script src = 'java.js'></script>
 </body>
 </html>
