@@ -1,6 +1,11 @@
 let list = document.querySelector('#list')
 let index1
+let maker1 = document.querySelector('#maker1')
+let maker2 = document.querySelector('#maker2')
+let submit = document.querySelector('#submit')
+
 let arr1 = [{'To take':'Брать','turn':false},{'To eat':'Есть (еду)','turn':false},{'To be':'Быть','turn':false},{'To wash':'Мыть','turn':false},{'To bring':'Приносить','turn':false},{'To stay':'Оставаться','turn':false},{'To hold':'Держать','turn':false},{'To swim':'Плавать','turn':false},{'To think':'Думать','turn':false},{'To rise':'Поднимать','turn':false},{'To clean':'Чистить','turn':false},{'To look':'Смотреть','turn':false},{'To love':'Любить','turn':false},{'To create':'Создавать','turn':false},{'To live':'Жить','turn':false},{'To hate':'Ненавидеть','turn':false},{'To dream':'Мечтать','turn':false},{'To lose':'Терять/Проигрывать','turn':false},{'To turn':'Поворачивать','turn':false},{'To add':'Добавлять','turn':false},{'To drink':'Пить','turn':false},{'To die':'Умирать','turn':false},{'To realize':'Осознавать','turn':false},{'To feel':'Чувствовать','turn':false}]
+
 function render(){
     list.innerHTML = ''
     for (let i = 0; i < arr1.length; i++){
@@ -58,5 +63,29 @@ list.onclick = function(event){
         arr1[index1].turn = !arr1[index1].turn
     }
     render()
+}
+
+function showMaker(){
+    maker1.style.display = 'block'
+    maker2.style.display = 'block'
+    submit.style.display = 'block'
+}
+
+function addition(){
+    if (!maker1.value || !maker2.value){
+        alert('Необходимо заполнить все поля')
+    }
+    else{
+        objNew = {}
+        objNew[`${maker1.value}`] = maker2.value
+        objNew[`turn`] = false
+        arr1.unshift(objNew)
+        maker1.value = ''
+        maker2.value = ''
+        maker1.style.display = 'none'
+        maker2.style.display = 'none'
+        submit.style.display = 'none'
+        render()
+    }
 }
 

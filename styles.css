@@ -84,7 +84,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     height: 39vh;
-    max-width: 35vh;
+    max-width: 25vw;
     display: inline-block;
     font-size: 4vh;
     padding-left: 1.4vh;
@@ -103,6 +103,30 @@ body{
 	-ms-user-select: none;
 	user-select: none;
 }*/
+
+.new{
+    box-sizing: border-box;
+    font-size: 3vh;
+    border: 0.3vh solid black;
+    border-radius: 0.8vh;
+    width: 30vw;
+}
+
+#add:hover{
+    background-color: #FFB040
+}
+
+#submit{
+    width: 15vw;
+}
+
+#maker1,#maker2,#submit{
+    display: none;
+}
+
+#submit:hover{
+    background-color: palegreen;
+}
 
 .divWords{
     list-style-type: none;
