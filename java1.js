@@ -6,6 +6,19 @@ let submit = document.querySelector('#submit')
 
 let arr1 = [{'To take':'Брать','turn':false},{'To eat':'Есть (еду)','turn':false},{'To be':'Быть','turn':false},{'To wash':'Мыть','turn':false},{'To bring':'Приносить','turn':false},{'To stay':'Оставаться','turn':false},{'To hold':'Держать','turn':false},{'To swim':'Плавать','turn':false},{'To think':'Думать','turn':false},{'To rise':'Поднимать','turn':false},{'To clean':'Чистить','turn':false},{'To look':'Смотреть','turn':false},{'To love':'Любить','turn':false},{'To create':'Создавать','turn':false},{'To live':'Жить','turn':false},{'To hate':'Ненавидеть','turn':false},{'To dream':'Мечтать','turn':false},{'To lose':'Терять/Проигрывать','turn':false},{'To turn':'Поворачивать','turn':false},{'To add':'Добавлять','turn':false},{'To drink':'Пить','turn':false},{'To die':'Умирать','turn':false},{'To realize':'Осознавать','turn':false},{'To feel':'Чувствовать','turn':false}]
 
+info = document.cookie
+info = info.split(';')
+
+if (document.cookie != ''){
+    for (elem1 of info){
+        splitted = elem1.split('=')
+        objNew1 = {}
+        objNew1[splitted[0]] = splitted[1]
+        objNew1['turn'] = false 
+        arr1.unshift(objNew1)
+    }
+}
+
 function render(){
     list.innerHTML = ''
     for (let i = 0; i < arr1.length; i++){
@@ -80,6 +93,7 @@ function addition(){
         objNew[`${maker1.value}`] = maker2.value
         objNew[`turn`] = false
         arr1.unshift(objNew)
+        document.cookie = `${maker1.value}=${maker2.value};max-age=360000`
         maker1.value = ''
         maker2.value = ''
         maker1.style.display = 'none'
@@ -88,4 +102,20 @@ function addition(){
         render()
     }
 }
+
+function CookiesDelete() {
+	let cookies = document.cookie.split(";");
+	for (let i = 0; i < cookies.length; i++) {
+		let cookie = cookies[i];
+		let eqPos = cookie.indexOf("=");
+		let name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+		document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
+		document.cookie = name + '=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+	}
+}
+
+/*CookiesDelete() если надо очистить куки, то можно запустить*/
+
+
+console.log(info)
 
