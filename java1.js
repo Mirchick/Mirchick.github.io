@@ -4,7 +4,7 @@ let maker1 = document.querySelector('#maker1')
 let maker2 = document.querySelector('#maker2')
 let submit = document.querySelector('#submit')
 
-let arr1 = [{'To take':'Брать','turn':false},{'To eat':'Есть (еду)','turn':false},{'To be':'Быть','turn':false},{'To wash':'Мыть','turn':false},{'To bring':'Приносить','turn':false},{'To stay':'Оставаться','turn':false},{'To hold':'Держать','turn':false},{'To swim':'Плавать','turn':false},{'To think':'Думать','turn':false},{'To rise':'Поднимать','turn':false},{'To clean':'Чистить','turn':false},{'To look':'Смотреть','turn':false},{'To love':'Любить','turn':false},{'To create':'Создавать','turn':false},{'To live':'Жить','turn':false},{'To hate':'Ненавидеть','turn':false},{'To dream':'Мечтать','turn':false},{'To lose':'Терять/Проигрывать','turn':false},{'To turn':'Поворачивать','turn':false},{'To add':'Добавлять','turn':false},{'To drink':'Пить','turn':false},{'To die':'Умирать','turn':false},{'To realize':'Осознавать','turn':false},{'To feel':'Чувствовать','turn':false}]
+let arr1 = [{'To take':'Брать','turn':false},{'To eat':'Есть','turn':false},{'To be':'Быть','turn':false},{'To wash':'Мыть','turn':false},{'To bring':'Приносить','turn':false},{'To stay':'Оставаться','turn':false},{'To hold':'Держать','turn':false},{'To swim':'Плавать','turn':false},{'To think':'Думать','turn':false},{'To rise':'Поднимать','turn':false},{'To clean':'Чистить','turn':false},{'To look':'Смотреть','turn':false},{'To love':'Любить','turn':false},{'To create':'Создавать','turn':false},{'To live':'Жить','turn':false},{'To hate':'Ненавидеть','turn':false},{'To dream':'Мечтать','turn':false},{'To lose':'Проигрывать','turn':false},{'To turn':'Поворачивать','turn':false},{'To add':'Добавлять','turn':false},{'To drink':'Пить','turn':false},{'To die':'Умирать','turn':false},{'To realize':'Осознавать','turn':false},{'To feel':'Чувствовать','turn':false}]
 
 info = document.cookie
 info = info.split(';')
@@ -25,8 +25,8 @@ function render(){
         if (arr1[i]['turn'] == false){
             for (key in arr1[i]){
                 if (key != 'turn'){
-                    list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative' class = 'noselect'>
-                    <p data-index = ${i} data-type = 'kart' class = 'primer2' class = 'noselect' turn = 'false'>${key}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
+                    list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
+                    <p data-index = ${i} data-type = 'kart' class = 'primer2' turn = 'false'>${key}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
                     </div></li>`)
                 }
             }
@@ -34,8 +34,8 @@ function render(){
         else if (arr1[i]['turn'] == true){
             for (key in arr1[i]){
                 if (key != 'turn'){
-                    list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative' class = 'noselect'>
-                    <p data-index = ${i} data-type = 'kart' class = 'primer3' class = 'noselect' turn = 'true'>${arr1[i][key]}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
+                    list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
+                    <p data-index = ${i} data-type = 'kart' class = 'primer3' turn = 'true'>${arr1[i][key]}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
                     </div></li>`)
                 }
             }   
@@ -47,8 +47,8 @@ for (let i = 0; i < arr1.length; i++){
     if (arr1[i]['turn'] == false){
         for (key in arr1[i]){
             if (key != 'turn'){
-                list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative' class = 'noselect'>
-                <p data-index = ${i} data-type = 'kart' class = 'primer2' class = 'noselect' turn = 'false'>${key}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
+                list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
+                <p data-index = ${i} data-type = 'kart' class = 'primer2' turn = 'false'>${key}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
                 </div></li>`)
             }
         }
@@ -56,8 +56,8 @@ for (let i = 0; i < arr1.length; i++){
     else if (arr1[i]['turn'] == true){
         for (key in arr1[i]){
             if (key != 'turn'){
-                list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative' class = 'noselect'>
-                <p data-index = ${i} data-type = 'kart' class = 'primer3' class = 'noselect' turn = 'true'>${arr1[i][key]}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
+                list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
+                <p data-index = ${i} data-type = 'kart' class = 'primer3' turn = 'true'>${arr1[i][key]}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
                 </div></li>`)
             }
         }   
@@ -118,4 +118,5 @@ function CookiesDelete() {
 
 
 console.log(info)
+
 

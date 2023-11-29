@@ -1,5 +1,7 @@
 body{
-    background-color: #6549D7;
+    background-image: url('images/fon.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #container{
@@ -8,8 +10,7 @@ body{
     flex-direction: column;
     padding-top: 0;
     max-width: 100vw;
-    height: 95vh;
-    background-image:linear-gradient(#1C0772,#6549D7);
+    height: 90vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,7 +21,6 @@ body{
     padding-left: 0;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(#6549D7, #1C0772);
 }
 
 .navElems{
@@ -55,7 +55,7 @@ body{
     font-size: 3vh;
     max-width: 50vw;
     padding: 3vh 2vh 2vh 2vh;
-    background-color: #91C5FF;
+    background-image: linear-gradient(orange,yellow);
     border-bottom-left-radius: 1.5vh;
     border-bottom-right-radius: 1.5vh;
 }
@@ -68,31 +68,33 @@ body{
 
 #primer1{
     box-sizing: border-box;
-    width: 52vh;
-    height: 39vh;
+    width: 30vw;
+    height: 20vw;
+    background-image: url('images/kart.jpg');
+    background-size: contain;
     border-bottom-left-radius: 1.5vh;
     border-top-left-radius: 1.5vh;
     cursor: pointer;
-    border: 0.8vh solid black;
     text-align: center;
     vertical-align: middle;
-    font-size: 8vh;
+    font-size: 10vh;
     padding-top: 6vh;
+    -webkit-text-stroke: 0.1vh white;
 }
 
 #des1{
     box-sizing: border-box;
     margin: 0;
-    height: 39vh;
-    max-width: 25vw;
+    height: 20vw;
+    max-width: 20vw;
     display: inline-block;
     font-size: 4vh;
     padding-left: 1.4vh;
     border-bottom-right-radius: 1.5vh;
     border-top-right-radius: 1.5vh;
-    border: 0.8vh solid black;
-    border-left: none;
-    background-color: #D8EC6E;
+    border: 0.5vh solid white;
+    background-image: linear-gradient(140deg,lightblue,#302BBD);
+    color: black;
 }
 
 /*.noselect{
@@ -133,50 +135,101 @@ body{
 }
 .primer2{
     box-sizing: border-box;
-    width: 52vh;
-    height: 39vh;
+    width: 59vh;
+    height: 40vh;
     border-radius: 1.5vh;
     cursor: pointer;
-    border: 0.8vh solid black;
+    border: 0.5vh solid black;
     text-align: center;
     vertical-align: middle;
     font-size: 8vh;
-    padding-top: 6vh;
-    background-color: #FFB040;
+    padding-top: 7vh;
+    background-image: url('images/kart.jpg'); 
+    background-size: contain;
+    color: black;
 }
 
 .primer3{
     box-sizing: border-box;
-    width: 52vh;
-    height: 39vh;
+    width: 59vh;
+    height: 40vh;
     border-radius: 1.5vh;
     cursor: pointer;
-    border: 0.8vh solid black;
+    border: 0.5vh solid black;
     text-align: center;
     vertical-align: middle;
     font-size: 8vh;
-    padding-top: 6vh;
-    background-color: #3CB635;
+    padding-top: 7vh;
+    background-image: url('images/kart.jpg'); 
+    background-size: contain;
+    color: black;
 }
 
 .press{
     position: absolute;
-    right: 5vw;
-    bottom: 5vh;
+    right: 3.5vw;
+    bottom: 3.2vw;
     font-size: 5vh;
-    width: 8vw;
+    width: 6vw;
     color: white;
     background-color: green;
     border: none;
-    border-radius: 1vh;
+    border-radius: 0.6vh;
 }
 
 .relative{
     position: relative;
+}
+
+.noSelect{
     -webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+#startTest{
+    font-size: 5vh;
+    margin-top: 8vh;
+    border-radius: 1vh;
+    border: none;
+    cursor: pointer;
+}
+
+#startTest:hover{
+    background-image: linear-gradient(red,orange);
+}
+
+.inter{
+    box-sizing: border-box;
+    font-size: 4vh;
+    width: 50vh;
+    height: 5vh;
+    border: none;
+    margin-right: 0.5vw;
+    display: none;
+}
+
+.check{
+    box-sizing: border-box;
+    height: 5vh;
+    width: 5vh;
+    border: none;
+    display: none;
+}
+
+.check:hover{
+    background-color: palegreen;
+}
+
+#divLast{
+    display: flex;
+}
+
+#listTest{
+    font-size: 5vh;
+    background-color: white;
+    border-radius: 1.5vh;
 }
