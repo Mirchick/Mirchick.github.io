@@ -1,67 +1,109 @@
-let list = document.querySelector('#list')
+let list = document.querySelector('#container')
 let index1
 let maker1 = document.querySelector('#maker1')
 let maker2 = document.querySelector('#maker2')
 let submit = document.querySelector('#submit')
+let maker3 = document.querySelector('#maker3')
+let maker4 = document.querySelector('#maker4')
+let splitted 
+let pairSplitted
+let objNew
+let none = document.getElementById('none')
+let noneLabel = document.getElementById('noneLabel')
+let add = document.querySelector('#add')
+let w = 36
+let h = 48
+let fs1 = 4.8
+let fs2 = 1.6
+let pt1 = 6.4
+let pt2 = 8
+let bh = 4.8
+let bw = 4.8
+let bfs = 2.4
 
-let arr1 = [{'To take':'Брать','turn':false},{'To eat':'Есть','turn':false},{'To be':'Быть','turn':false},{'To wash':'Мыть','turn':false},{'To bring':'Приносить','turn':false},{'To stay':'Оставаться','turn':false},{'To hold':'Держать','turn':false},{'To swim':'Плавать','turn':false},{'To think':'Думать','turn':false},{'To rise':'Поднимать','turn':false},{'To clean':'Чистить','turn':false},{'To look':'Смотреть','turn':false},{'To love':'Любить','turn':false},{'To create':'Создавать','turn':false},{'To live':'Жить','turn':false},{'To hate':'Ненавидеть','turn':false},{'To dream':'Мечтать','turn':false},{'To lose':'Проигрывать','turn':false},{'To turn':'Поворачивать','turn':false},{'To add':'Добавлять','turn':false},{'To drink':'Пить','turn':false},{'To die':'Умирать','turn':false},{'To realize':'Осознавать','turn':false},{'To feel':'Чувствовать','turn':false}]
-
+let arr1 = [{'word':'To take','trans':'Взять','phrase':'To take a hat','phraseT':'Взять шляпу','turn':false},{'word':'To eat','trans':'Кушать','phrase':'To eat an apple','phraseT':'Кушать яблоко','turn':false},{'word':'To be','trans':'Быть','phrase':'To be at home','phraseT':'Быть дома','turn':false},{'word':'To wash','trans':'Мыть','phrase':'To wash the floor','phraseT':'Мыть пол','turn':false},{'word':'To bring','trans':'Приносить','phrase':'To bring the gift','phraseT':'Принести подарок','turn':false},{'word':'To stay','trans':'Оставаться','phrase':'To stay alive','phraseT':'Оставаться живым','turn':false},{'word':'To hold','trans':'Держать','phrase':'To hold a ball','phraseT':'Держать мяч','turn':false},{'word':'To swim','trans':'Плавать','phrase':'To swim in the pool','phraseT':'Плавать в бассейне','turn':false},{'word':'To think','trans':'Думать','phrase':'To think fast','phraseT':'Думать быстро','turn':false},{'word':'To rise','trans':'Поднимать','phrase':'To rise a hand','phraseT':'Поднять руку','turn':false},{'word':'To clean','trans':'Чистить','phrase':'To clean a carpet','phraseT':'Чистить ковёр','turn':false},{'word':'To look','trans':'Смотреть','phrase':'To look at people','phraseT':'Смотреть на людей','turn':false},{'word':'To love','trans':'Любить','phrase':'I love you','phraseT':'Я люблю тебя','turn':false},{'word':'To create','trans':'Создавать','phrase':'To create content','phraseT':'Создавать контент','turn':false},{'word':'To live','trans':'Жить','phrase':'To live long','phraseT':'Жить долго','turn':false},{'word':'To hate','trans':'Ненавидеть','phrase':'To hate soup','phraseT':'Ненавидеть суп','turn':false},{'word':'To dream','trans':'Мечтать','phrase':'To dream about the future','phraseT':'Мечтать о будущем','turn':false},{'word':'To lose','trans':'Терять','phrase':'To lose a sock','phraseT':'Потерять носок','turn':false},{'word':'To turn','trans':'Повернуть','phrase':'To turn right','phraseT':'Повернуть направо','turn':false},{'word':'To add','trans':'Добавлять','phrase':'To add water','phraseT':'Добавить воды','turn':false},{'word':'To drink','trans':'Пить','phrase':'To drink tea','phraseT':'Пить чай','turn':false},{'word':'To die','trans':'Умереть','phrase':'To die from illness','phraseT':'Умереть от болезни','turn':false},{'word':'To realize','trans':'Осознать','phrase':'To realize something','phraseT':'Что-то осознать','turn':false},{'word':'To feel','trans':'Чувствовать','phrase':'To feel the touch','phraseT':'Чувствовать прикосновение','turn':false}]
 info = document.cookie
 info = info.split(';')
 
 if (document.cookie != ''){
     for (elem1 of info){
-        splitted = elem1.split('=')
-        objNew1 = {}
-        objNew1[splitted[0]] = splitted[1]
-        objNew1['turn'] = false 
-        arr1.unshift(objNew1)
+        objNew = {}
+        splitted = elem1.split(',')
+        for (pair of splitted){
+            pairSplitted = pair.split('=')
+            objNew[pairSplitted[0]] = pairSplitted[1]
+            objNew['turn'] = false
+        }
+        arr1.unshift(objNew)
+        render()
     }
+}
+
+function small(){
+    w = 18
+    h = 24
+    fs1 = 2.4
+    fs2 = 0.8
+    pt1 = 3.2
+    pt2 = 4
+    bh = 2.4
+    bw = 2.4
+    bfs = 1.2
+    render()
+}
+
+function mid(){
+    w = 36
+    h = 48
+    fs1 = 4.8
+    fs2 = 1.6
+    pt1 = 6.4
+    pt2 = 8
+    bh = 4.8
+    bw = 4.8
+    bfs = 2.4
+    render()
+}
+
+function big(){
+    w = 45
+    h = 60
+    fs1 = 6
+    fs2 = 2
+    pt1 = 8
+    pt2 = 10
+    bh = 6
+    bw = 6
+    bfs = 3
+    render()
 }
 
 function render(){
     list.innerHTML = ''
     for (let i = 0; i < arr1.length; i++){
         if (arr1[i]['turn'] == false){
-            for (key in arr1[i]){
-                if (key != 'turn'){
-                    list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
-                    <p data-index = ${i} data-type = 'kart' class = 'primer2' turn = 'false'>${key}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
-                    </div></li>`)
-                }
-            }
+            list.insertAdjacentHTML("beforeend",`<div class="card border-dark text-dark bg-light mb-3" style="width:${w}vw;max-width: ${w}vw; height: ${h}vh;margin-right:auto;margin-left:auto;border-radius:${bfs}vh">
+            <div data-index = ${i} data-type = 'kart' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+            <h1 data-index = ${i} data-type = 'kart' class ="card-title text-center" style = 'font-size:${fs1}vw;padding-top: ${pt1}vh;'>${arr1[i]['word']}</h1><button data-index = ${i} data-type = 'delete' type="button" class="btn btn-success" style = 'color:white;height:${bh}vh;width:${bw}vw;font-size:${bfs}vh;position:absolute;bottom:${bfs}vh;right:${fs2}vw;border-radius:${bh/12}vh'>✓</button>
+            <p data-index = ${i} data-type = 'kart' class="card-text text-center" style = 'font-size:${fs2}vw;padding-top: ${pt2}vh;'>${arr1[i]['phrase']}</p>
+            </div>
+            </div>`)
         }
         else if (arr1[i]['turn'] == true){
-            for (key in arr1[i]){
-                if (key != 'turn'){
-                    list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
-                    <p data-index = ${i} data-type = 'kart' class = 'primer3' turn = 'true'>${arr1[i][key]}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
-                    </div></li>`)
-                }
-            }   
+            list.insertAdjacentHTML("beforeend",`<div class="card border-dark text-bg-dark mb-3" style="width:${w}vw;max-width: ${w}vw; height: ${h}vh;margin-right:auto;margin-left:auto;border-radius:${bfs}vh">
+            <div data-index = ${i} data-type = 'kart' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+            <h1 data-index = ${i} data-type = 'kart' class ="card-title text-center" style = 'font-size:${fs1}vw;padding-top: ${pt1}vh;'>${arr1[i]['trans']}</h1><button data-index = ${i} data-type = 'delete' type="button" class="btn btn-success" style = 'color:white;height:${bh}vh;width:${bw}vw;font-size:${bfs}vh;position:absolute;bottom:${bfs}vh;right:${fs2}vw;border-radius:${bh/12}vh'>✓</button>
+            <p data-index = ${i} data-type = 'kart' class="card-text text-center" style = 'font-size:${fs2}vw;padding-top: ${pt2}vh;'>${arr1[i]['phraseT']}</p>
+            </div>
+            </div>`)
         }
     }
 }
 
-for (let i = 0; i < arr1.length; i++){
-    if (arr1[i]['turn'] == false){
-        for (key in arr1[i]){
-            if (key != 'turn'){
-                list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
-                <p data-index = ${i} data-type = 'kart' class = 'primer2' turn = 'false'>${key}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
-                </div></li>`)
-            }
-        }
-    }
-    else if (arr1[i]['turn'] == true){
-        for (key in arr1[i]){
-            if (key != 'turn'){
-                list.insertAdjacentHTML("beforeend",`<li class = 'divWords'><div class = 'relative'>
-                <p data-index = ${i} data-type = 'kart' class = 'primer3' turn = 'true'>${arr1[i][key]}</p><button data-index = ${i} data-type = 'delete' class = 'press'>✔</button>
-                </div></li>`)
-            }
-        }   
-    }
+function show(){
+    none.className = "input-group mb-3 visible"
+    add.className = "btn btn-dark invisible"
+    noneLabel.className = 'visible'
 }
 
 
@@ -78,27 +120,26 @@ list.onclick = function(event){
     render()
 }
 
-function showMaker(){
-    maker1.style.display = 'block'
-    maker2.style.display = 'block'
-    submit.style.display = 'block'
-}
-
 function addition(){
     if (!maker1.value || !maker2.value){
-        alert('Необходимо заполнить все поля')
+        alert('Необходимо заполнить все обязательные поля')
     }
     else{
         objNew = {}
-        objNew[`${maker1.value}`] = maker2.value
-        objNew[`turn`] = false
+        objNew['word'] = maker1.value
+        objNew['trans'] = maker2.value
+        objNew['phrase'] = maker3.value
+        objNew['phraseT'] = maker4.value
+        objNew['turn'] = false
         arr1.unshift(objNew)
-        document.cookie = `${maker1.value}=${maker2.value};max-age=360000`
+        document.cookie = `word=${maker1.value},trans=${maker2.value},phrase=${maker3.value},phraseT=${maker4.value};max-age=36000`
         maker1.value = ''
         maker2.value = ''
-        maker1.style.display = 'none'
-        maker2.style.display = 'none'
-        submit.style.display = 'none'
+        maker3.value = ''
+        maker4.value = ''
+        none.className = "input-group mb-3 invisible"
+        add.className = "btn btn-dark visible"
+        noneLabel.className = 'invisible'
         render()
     }
 }
@@ -117,6 +158,6 @@ function CookiesDelete() {
 /*CookiesDelete() если надо очистить куки, то можно запустить*/
 
 
-console.log(info)
+render()
 
 
