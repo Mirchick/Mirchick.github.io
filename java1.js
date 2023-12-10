@@ -6,6 +6,13 @@ let submit = document.querySelector('#submit')
 let maker3 = document.querySelector('#maker3')
 let maker4 = document.querySelector('#maker4')
 let splitted 
+let class1 = 'small'
+let class2 = 'mid'
+let class3 = 'big'
+let mainClass = class2
+let small1 = document.querySelector('.dropdown-item.small')
+let mid1 = document.querySelector('.dropdown-item.mid')
+let big1 = document.querySelector('.dropdown-item.big')
 let pairSplitted
 let objNew
 let none = document.getElementById('none')
@@ -40,60 +47,45 @@ if (document.cookie != ''){
 }
 
 function small(){
-    w = 18
-    h = 24
-    fs1 = 2.4
-    fs2 = 0.8
-    pt1 = 3.2
-    pt2 = 4
-    bh = 2.4
-    bw = 2.4
-    bfs = 1.2
+    mainClass = class1
     render()
+    small1.className = 'dropdown-item small active'
+    mid1.className = 'dropdown-item mid'
+    big1.className = 'dropdown-item big'
 }
 
 function mid(){
-    w = 36
-    h = 48
-    fs1 = 4.8
-    fs2 = 1.6
-    pt1 = 6.4
-    pt2 = 8
-    bh = 4.8
-    bw = 4.8
-    bfs = 2.4
+    mainClass = class2
     render()
+    small1.className = 'dropdown-item small'
+    mid1.className = 'dropdown-item mid active'
+    big1.className = 'dropdown-item big'
 }
 
 function big(){
-    w = 45
-    h = 60
-    fs1 = 6
-    fs2 = 2
-    pt1 = 8
-    pt2 = 10
-    bh = 6
-    bw = 6
-    bfs = 3
+    mainClass = class3
     render()
+    small1.className = 'dropdown-item small'
+    mid1.className = 'dropdown-item mid'
+    big1.className = 'dropdown-item big active'
 }
 
 function render(){
     list.innerHTML = ''
     for (let i = 0; i < arr1.length; i++){
         if (arr1[i]['turn'] == false){
-            list.insertAdjacentHTML("beforeend",`<div class="card border-dark text-dark bg-light mb-3" style="width:${w}vw;max-width: ${w}vw; height: ${h}vh;margin-right:auto;margin-left:auto;border-radius:${bfs}vh">
+            list.insertAdjacentHTML("beforeend",`<div class='card border-dark text-dark bg-light mb-3 ${mainClass}'>
             <div data-index = ${i} data-type = 'kart' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-            <h1 data-index = ${i} data-type = 'kart' class ="card-title text-center" style = 'font-size:${fs1}vw;padding-top: ${pt1}vh;'>${arr1[i]['word']}</h1><button data-index = ${i} data-type = 'delete' type="button" class="btn btn-success" style = 'color:white;height:${bh}vh;width:${bw}vw;font-size:${bfs}vh;position:absolute;bottom:${bfs}vh;right:${fs2}vw;border-radius:${bh/12}vh'>✓</button>
-            <p data-index = ${i} data-type = 'kart' class="card-text text-center" style = 'font-size:${fs2}vw;padding-top: ${pt2}vh;'>${arr1[i]['phrase']}</p>
+            <h1 data-index = ${i} data-type = 'kart' class ="card-title text-center ${mainClass}">${arr1[i]['word']}</h1><button data-index = ${i} data-type = 'delete' type="button" class="btn btn-success ${mainClass}">✓</button>
+            <p data-index = ${i} data-type = 'kart' class="card-text text-center ${mainClass}">${arr1[i]['phrase']}</p>
             </div>
             </div>`)
         }
         else if (arr1[i]['turn'] == true){
-            list.insertAdjacentHTML("beforeend",`<div class="card border-dark text-bg-dark mb-3" style="width:${w}vw;max-width: ${w}vw; height: ${h}vh;margin-right:auto;margin-left:auto;border-radius:${bfs}vh">
+            list.insertAdjacentHTML("beforeend",`<div class="card border-dark text-bg-dark mb-3 ${mainClass}">
             <div data-index = ${i} data-type = 'kart' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-            <h1 data-index = ${i} data-type = 'kart' class ="card-title text-center" style = 'font-size:${fs1}vw;padding-top: ${pt1}vh;'>${arr1[i]['trans']}</h1><button data-index = ${i} data-type = 'delete' type="button" class="btn btn-success" style = 'color:white;height:${bh}vh;width:${bw}vw;font-size:${bfs}vh;position:absolute;bottom:${bfs}vh;right:${fs2}vw;border-radius:${bh/12}vh'>✓</button>
-            <p data-index = ${i} data-type = 'kart' class="card-text text-center" style = 'font-size:${fs2}vw;padding-top: ${pt2}vh;'>${arr1[i]['phraseT']}</p>
+            <h1 data-index = ${i} data-type = 'kart' class ="card-title text-center ${mainClass}">${arr1[i]['trans']}</h1><button data-index = ${i} data-type = 'delete' type="button" class="btn btn-success ${mainClass}">✓</button>
+            <p data-index = ${i} data-type = 'kart' class="card-text text-center ${mainClass}">${arr1[i]['phraseT']}</p>
             </div>
             </div>`)
         }

@@ -3,6 +3,11 @@ let exampleWord = document.querySelector('#exampleWord')
 let examplePhrase = document.querySelector('#examplePhrase')
 let arr1 = [{word:'To take',trans:'Взять',phrase:'To take a hat',phraseT:'Взять шляпу'}]
 let cardExample = document.querySelector('#cardExample')
+let cardExample1 = document.querySelector('#cardExample1')
+let exampleWord1 = document.querySelector('#exampleWord1')
+let examplePhrase1 = document.querySelector('#examplePhrase1')
+let dada = 1
+
 
 let {word,trans,phrase,phraseT} = arr1[0]
 exampleWord.innerHTML = word
@@ -27,5 +32,26 @@ function change(){
         examplePhrase.innerHTML = phraseT
         document.getElementById('chCl').className = "card border-dark text-bg-dark mb-3"
         i++
+    }
+}
+
+function prikol(){
+    alert('Шутки шутками, но понятно ведь, что карточка исчезнет?')
+}
+
+function replacing(){
+    if (dada == 1){
+        cardExample1.style.backgroundImage = 'url(images/wall.jpg)'
+        cardExample1.style.backgroundSize = 'cover'
+        exampleWord1.innerHTML = ''
+        examplePhrase1.innerHTML = ''
+        dada--
+        setTimeout(prikol,2000)
+    }
+    else if (dada == 0){
+        cardExample1.style.backgroundImage = 'initial'
+        exampleWord1.innerHTML = 'To live'
+        examplePhrase1.innerHTML = 'To live long'
+        dada++
     }
 }

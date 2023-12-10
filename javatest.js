@@ -7,13 +7,14 @@ let checking = document.querySelector('#checking')
 let start = document.querySelector('#start')
 let finish = document.querySelector('#finish')
 let progress = document.querySelector('#progress')
+let fin = document.querySelector('#fin')
 
 function newWord(){
     for (key in arr2[0]){
         if (key != 'turn'){
-            list1.insertAdjacentHTML("beforeend",`<div class="card border-dark text-dark bg-light mb-3" style="width:36vw;max-width: 36vw; height: 48vh;margin-right:auto;margin-left:auto;border-radius:2.4vh">
+            list1.insertAdjacentHTML("beforeend",`<div class="card border-dark text-dark bg-light mb-3 help">
             <div   class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-            <h1  class ="card-title text-center" style = 'font-size:4.8vw;padding-top: 6.4vh;'>${key}</h1>
+            <h1  class ="card-title text-center help">${key}</h1>
             </div>
             </div>`)
         }
@@ -53,7 +54,7 @@ function check(){
                     newWord()
                     if (arr2.length == 0){
                         checking.className = 'input-group mb-3 invisible'
-                        list1.innerHTML = `Тест завершён, Ваш счёт: ${score} из 24`
+                        fin.innerHTML = `Тест завершён, Ваш счёт: ${score} из 24`
                         progress.insertAdjacentHTML("beforeend",`<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 3vh">
                         <div class="progress-bar text-bg-warning" style="width: ${Math.round(score/24*100*10)/10}%">${Math.round(score/24*100*10)/10}%</div>
                         </div>`)
@@ -68,7 +69,7 @@ function check(){
                     newWord()
                     if (arr2.length == 0){
                         checking.className = 'input-group mb-3 invisible' 
-                        list1.innerHTML = `Тест завершён, Ваш счёт: ${score} из 24`
+                        fin.innerHTML = `Тест завершён, Ваш счёт: ${score} из 24`
                         progress.insertAdjacentHTML("beforeend",`<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 3vh">
                         <div class="progress-bar text-bg-warning" style="width: ${Math.round(score/24*100*10)/10}%">${Math.round(score/24*100*10)/10}%</div>
                         </div>`)

@@ -5,37 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn English</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel = 'stylesheet'>
+  <link href = 'styles.css' rel = 'stylesheet'>
 </head>
 <body>
   <ul class="nav nav-pills nav-fill">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="index.html" style="font-size: 3vh;">Главная</a>
+      <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="words.html" style="font-size: 3vh;">Учить слова</a>
+      <a class="nav-link" href="words.html">Учить слова</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="test.html" style="font-size: 3vh;">Тест</a>
+      <a class="nav-link" href="test.html">Тест</a>
     </li>
   </ul>
-  <div style="background-image: url(images/fon.jpg);height: 100vh;">
-    <p class='text-center fs-1' style = 'padding-top: 10vh;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;font-family: Roboto, sans-serif;'>Чем удобен наш сайт по изучению английского языка:</p>
-    <div class="d-flex justify-content-center" style = 'margin-top: 10vh;'>
-      <div id = 'chCl' class="card border-dark text-dark bg-light mb-3" style="width: 35vw; height: 50vh;">
+  <div style="background-image: url(images/fon.jpg);background-attachment: fixed;">
+    <p id='text1_1' >Чем удобен наш сайт по изучению английского языка:</p>
+    <div class="d-flex justify-content-center">
+      <div id = 'chCl' class="card border-dark text-dark bg-light mb-3">
         <div id = 'cardExample' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-          <h1 id = 'exampleWord' class ="card-title text-center" style = 'font-size:7vw;padding-top: 8vh;'>To take</h1>
-          <p id = 'examplePhrase' class="card-text text-center" style = 'font-size:3vw;'>To take a hat</p>
+          <h1 id = 'exampleWord' class ="card-title text-center">To take</h1>
+          <p id = 'examplePhrase' class="card-text text-center">To take a hat</p>
         </div>
       </div>
-      <div class="card border-dark text-bg-secondary mb-3" style="width: 23vw;height: 50vh;font-size:2vw;background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-        <div class="card-body">
-          <p class="card-text text-wrap" style="width:22vw;font-size:2vw;line-height: 6.5vh;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете узнать значение любого незнакомого слова с помощью клика по карточке. Попробуйте кликнуть по карточке слева</p>
-        </div>
+      <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
+        <p id = 'text1_2' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете узнать значение любого незнакомого слова с помощью клика по карточке. Попробуйте кликнуть по карточке слева</p>
       </div>
     </div>
+    <div class="d-flex justify-content-center">
+      <div id = 'chCl1' class="card border-dark text-dark bg-light mb-3">
+        <div id = 'cardExample1' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+          <h1 id = 'exampleWord1' class ="card-title text-center">To live</h1>
+          <p id = 'examplePhrase1' class="card-text text-center">To live long</p>
+          <button id = 'exampleButton' onclick = replacing()>✓</button>
+        </div>
+      </div>
+      <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
+        <p id = 'text1_3' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете отмечать слова, которые уже знаете, нажав на галочку, которая относится к этой карточке. Попробуйте нажать на галочку</p>
+      </div>
+    </div>
+    <p id = 'reff1'>А ещё Вы можете добавлять свои слова на вкладке "Учить слова", чтобы персонализировать своё обучение под себя</p>
+    <p id = 'reff2'>Перейдя на вкладку "Тест" Вы можете проверить свои знания и посмотреть прогресс</p>
+    <div style="height: 10vw;">
+
+    </div>
   </div>
-
-
   <script src = 'java.js'></script>
   <script src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'></script>
 </body>

@@ -10,28 +10,31 @@
 <body>
   <ul class="nav nav-pills nav-fill">
     <li class="nav-item">
-      <a class="nav-link" style="font-size: 3vh;" aria-current="page" href="index.html">Главная</a>
+      <a class="nav-link" aria-current="page" href="index.html">Главная</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" style="font-size: 3vh;" href="words.html">Учить слова</a>
+      <a class="nav-link" href="words.html">Учить слова</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" style="font-size: 3vh;" href="test.html">Тест</a>
+      <a class="nav-link active" href="test.html">Тест</a>
     </li>
   </ul>
   <div style = 'background-image: url(images/fon.jpg);background-attachment: fixed;height: 100vh;'>
-    <div style = 'max-width: 50vw;margin-left: auto;margin-right: auto;'>
-      <div class="d-grid col-2 mx-auto">
-        <button id = 'start' class="btn btn-primary visible" onclick = startTest() style = 'margin-top: 6vh;'>Начать тест</button>
+    <div>
+      <div class="d-grid col-8 mx-auto">
+        <button id = 'start' class="btn btn-primary visible" onclick = startTest()>Начать тест</button>
       </div>
-      <div class="d-grid col-3 mx-auto">
-        <button id = 'finish' class="btn btn-primary invisible" onclick = finishTest() style = 'margin-bottom: 4vh;'>Завершить тест</button>
+      <div class="d-grid col-8 mx-auto">
+        <button id = 'finish' class="btn btn-primary invisible" onclick = finishTest()>Завершить тест</button>
       </div>
-      <div id="listTest" class="fw-medium fs-1" style = 'max-width: 50vw;margin-left: auto;margin-right: auto;text-align: center;'>
+      <div id="listTest">
       </div>
-      <div id = 'checking' class="input-group mb-3 invisible" style = 'max-width: 36vw;margin-left: auto;margin-right: auto;'>
+      <div id = 'checking' class="input-group mb-3 invisible">
         <input type="text" id = 'inter' class="form-control" placeholder="Введите перевод" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button class="btn btn-dark" id="button-addon2" onclick = check() type="button">Далее</button>
+      </div>
+      <div>
+        <p id = 'fin'></p>
       </div>
       <div id = 'progress'>
       </div>
