@@ -19,17 +19,7 @@
       <a class="nav-link" href="test.html">Тест</a>
     </li>
   </ul>
-  <div style="background-image: url(images/fon.jpg);background-attachment: fixed;">
-    <div class="dropdown" style="float: right;">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Размер карточек
-      </button>
-      <ul class="dropdown-menu">
-        <li><button class="dropdown-item small" onclick = small()>Маленький</button></li>
-        <li><button class="dropdown-item mid active" onclick = mid()>Средний</button></li>
-        <li><button class="dropdown-item big" onclick = big()>Большой</button></li>
-      </ul>
-    </div>
+  <div class = 'fonn' style="background-image: url(images/fon.jpg);background-attachment: fixed;">
     <p class='description' style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;font-family: Roboto, sans-serif;'>Пользоваться карточками очень просто: если Вы знаете значение слова, то кликните на галочку, а если Вы хотите узнать значение слова, то нажмите на карточку</p>
     <div class="d-grid col-6 mx-auto">
       <button id = 'add' class="btn btn-dark visible" type="button" onclick = show()>Добавить слово</button>
@@ -54,7 +44,7 @@
       <button class="btn btn-dark" type="button" onclick="addition()">Добавить</button>
     </div>
     <label id = 'noneLabel' for="none" class = 'invisible' style = "position:absolute;left:20vw;">*Параметры по желанию</label>
-    <div id = 'container' style = 'margin-top: 8vh;'>
+    <div id = 'container'>
     </div>
   </div>
 

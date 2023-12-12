@@ -8,6 +8,7 @@ let start = document.querySelector('#start')
 let finish = document.querySelector('#finish')
 let progress = document.querySelector('#progress')
 let fin = document.querySelector('#fin')
+const jjj = 5
 
 function newWord(){
     for (key in arr2[0]){

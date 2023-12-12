@@ -35,7 +35,7 @@
         font-size: 2.4vw;
     }
     .description{
-        padding-top: 9vw;
+        padding-top: 5vw;
         text-align: center;
         font-size: 3.5vw;
     }
@@ -46,22 +46,22 @@
         margin-right: auto;
     }
     #maker1,#maker2,#maker3,#maker4{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     #l1{
-        font-size:3vw;
+        font-size:2vw;
         padding-left:1.5vw
     }
     #l2{
-        font-size:3vw;
+        font-size:2vw;
         padding-left:3vw
     }
     #l3{
-        font-size:3vw;
+        font-size:2vw;
         padding-left:0.5vw
     }
     #l4{
-        font-size:3vw;
+        font-size:2vw;
         padding-left:3vw
     }
     #none{
@@ -69,51 +69,19 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .card.border-dark.text-dark.bg-light.mb-3.small,.card.border-dark.text-bg-dark.mb-3.small{
-        width: 50vw;
-        height: 30vw;
-        max-width: 50vw;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 2vw;
-    }
     .card.border-dark.text-dark.bg-light.mb-3.mid,.card.border-dark.text-bg-dark.mb-3.mid{
-        width: 75vw;
-        height: 45vw;
-        max-width: 75vw;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 4vw;
-    }
-    .card.border-dark.text-dark.bg-light.mb-3.big,.card.border-dark.text-bg-dark.mb-3.big{
-        width: 95vw;
-        height: 60vw;
-        max-width: 95vw;
+        width: 90vw;
+        height: 55vw;
+        max-width: 90vw;
         margin-left: auto;
         margin-right: auto;
         border-radius: 5vw;
     }
-    .card-title.text-center.small{
-        font-size: 6vw;
-        padding-top: 5vw;
-    }
     .card-title.text-center.mid{
-        font-size: 9vw;
-        padding-top: 8vw;
-    }
-    .card-title.text-center.big{
         font-size: 12vw;
         padding-top: 10vw;
     }
-    .card-text.text-center.small{
-        font-size: 2.5vw;
-        padding-top: 3vw;
-    }
     .card-text.text-center.mid{
-        font-size: 3.7vw;
-        padding-top: 5vw;
-    }
-    .card-text.text-center.big{
         font-size: 5vw;
         padding-top: 7vw;
     }
@@ -203,6 +171,30 @@
         border: none;
         font-size: 3vw;
     }
+    .previous{
+        position: absolute;
+        left: 0;
+        top: 21vw;
+        font-size: 8vw;
+        border-left: none;
+        border-top-right-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+    }
+    .next{
+        position: absolute;
+        right: 0;
+        top: 21vw;
+        font-size: 8vw;
+        border-right: none;
+        border-top-left-radius: 1vw;
+        border-bottom-left-radius: 1vw;
+    }
+    #container{
+        margin-top: 20vw;
+    }
+    .fonn{
+        height: 100vh;
+    }
 }
 
 @media (min-width:200px) and (orientation: landscape){
@@ -242,7 +234,7 @@
         font-size: 1vw;
     }
     .description{
-        padding-top: 6vw;
+        padding-top: 2vw;
         text-align: center;
         font-size: 2vw;
         max-width: 80vw;
@@ -256,36 +248,28 @@
         margin-right: auto;
     }
     #maker1,#maker2,#maker3,#maker4{
-        font-size: 1vw;
+        font-size: 0.8vw;
     }
     #l1{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #l2{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #l3{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #l4{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #none{
         max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
-    }
-    .card.border-dark.text-dark.bg-light.mb-3.small,.card.border-dark.text-bg-dark.mb-3.small{
-        width: 25vw;
-        height: 16vw;
-        max-width: 50vw;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 1.1vw;
     }
     .card.border-dark.text-dark.bg-light.mb-3.mid,.card.border-dark.text-bg-dark.mb-3.mid{
         width: 36vw;
@@ -295,47 +279,13 @@
         margin-right: auto;
         border-radius: 1.7vw;
     }
-    .card.border-dark.text-dark.bg-light.mb-3.big,.card.border-dark.text-bg-dark.mb-3.big{
-        width: 60vw;
-        height: 40vw;
-        max-width: 95vw;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 3vw;
-    }
-    .card-title.text-center.small{
-        font-size: 3vw;
-        padding-top: 2.5vw;
-    }
     .card-title.text-center.mid{
         font-size: 5vw;
         padding-top: 4vw;
     }
-    .card-title.text-center.big{
-        font-size: 8vw;
-        padding-top: 6vw;
-    }
-    .card-text.text-center.small{
-        font-size: 1.5vw;
-        padding-top: 2vw;
-    }
     .card-text.text-center.mid{
         font-size: 2vw;
         padding-top: 3vw;
-    }
-    .card-text.text-center.big{
-        font-size: 3vw;
-        padding-top: 7vw;
-    }
-    .btn.btn-success.small{
-        color:white;
-        height:2.5vw;
-        width:3.5vw;
-        font-size:1vw;
-        position:absolute;
-        bottom:0.6vw;
-        right:0.6vw;
-        border-radius:0.4vw;
     }
     .btn.btn-success.mid{
         color:white;
@@ -346,16 +296,6 @@
         bottom:1.1vw;
         right:1.1vw;
         border-radius:0.5vw;
-    }
-    .btn.btn-success.big{
-        color:white;
-        height:4.5vw;
-        width:6.5vw;
-        font-size:2vw;
-        position:absolute;
-        bottom:1.6vw;
-        right:1.6vw;
-        border-radius:0.6vw;
     }
     #start{
         max-width: 30vw;
@@ -408,15 +348,39 @@
     }
     #exampleButton{
         position: absolute;
-        right: 3vw;
-        bottom: 3vw;
-        width: 8vw;
-        height: 5vw;
+        right: 2vw;
+        bottom: 2vw;
+        width: 6vw;
+        height: 4vw;
         background-color: green;
         color:white;
         border-radius: 0.5vw;
         border: none;
-        font-size: 3vw;
+        font-size: 2vw;
+    }
+    .previous{
+        position: absolute;
+        left: 0;
+        top: 10vw;
+        font-size: 4vw;
+        border-left: none;
+        border-top-right-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+    }
+    .next{
+        position: absolute;
+        right: 0;
+        top: 10vw;
+        font-size: 4vw;
+        border-right: none;
+        border-top-left-radius: 1vw;
+        border-bottom-left-radius: 1vw;
+    }
+    .fonn{
+        height: 100vh;
+    }
+    #container{
+        margin-top: 7vw;
     }
 }
 
@@ -457,7 +421,7 @@
         font-size: 1vw;
     }
     .description{
-        padding-top: 6vw;
+        padding-top: 2vw;
         text-align: center;
         font-size: 2vw;
         max-width: 80vw;
@@ -474,33 +438,25 @@
         font-size: 1vw;
     }
     #l1{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #l2{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #l3{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #l4{
-        font-size:1.2vw;
+        font-size:0.8vw;
         padding-left:0.3vw
     }
     #none{
         max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
-    }
-    .card.border-dark.text-dark.bg-light.mb-3.small,.card.border-dark.text-bg-dark.mb-3.small{
-        width: 25vw;
-        height: 16vw;
-        max-width: 50vw;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 1.1vw;
     }
     .card.border-dark.text-dark.bg-light.mb-3.mid,.card.border-dark.text-bg-dark.mb-3.mid{
         width: 36vw;
@@ -509,48 +465,15 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 1.7vw;
-    }
-    .card.border-dark.text-dark.bg-light.mb-3.big,.card.border-dark.text-bg-dark.mb-3.big{
-        width: 60vw;
-        height: 40vw;
-        max-width: 95vw;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 3vw;
-    }
-    .card-title.text-center.small{
-        font-size: 3vw;
-        padding-top: 2.5vw;
+        display: none;
     }
     .card-title.text-center.mid{
         font-size: 5vw;
         padding-top: 4vw;
     }
-    .card-title.text-center.big{
-        font-size: 8vw;
-        padding-top: 6vw;
-    }
-    .card-text.text-center.small{
-        font-size: 1.5vw;
-        padding-top: 2vw;
-    }
     .card-text.text-center.mid{
         font-size: 2vw;
         padding-top: 3vw;
-    }
-    .card-text.text-center.big{
-        font-size: 3vw;
-        padding-top: 7vw;
-    }
-    .btn.btn-success.small{
-        color:white;
-        height:2.5vw;
-        width:3.5vw;
-        font-size:1vw;
-        position:absolute;
-        bottom:0.6vw;
-        right:0.6vw;
-        border-radius:0.4vw;
     }
     .btn.btn-success.mid{
         color:white;
@@ -561,16 +484,6 @@
         bottom:1.1vw;
         right:1.1vw;
         border-radius:0.5vw;
-    }
-    .btn.btn-success.big{
-        color:white;
-        height:4.5vw;
-        width:6.5vw;
-        font-size:2vw;
-        position:absolute;
-        bottom:1.6vw;
-        right:1.6vw;
-        border-radius:0.6vw;
     }
     #start{
         max-width: 30vw;
@@ -623,14 +536,38 @@
     }
     #exampleButton{
         position: absolute;
-        right: 3vw;
-        bottom: 3vw;
-        width: 8vw;
-        height: 5vw;
+        right: 1.5vw;
+        bottom: 1.5vw;
+        width: 5vw;
+        height: 3.5vw;
         background-color: green;
         color:white;
         border-radius: 0.5vw;
         border: none;
-        font-size: 3vw;
+        font-size: 2.4vw;
+    }
+    .previous{
+        position: absolute;
+        left: 0;
+        top: 10vw;
+        font-size: 4vw;
+        border-left: none;
+        border-top-right-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+    }
+    .next{
+        position: absolute;
+        right: 0;
+        top: 10vw;
+        font-size: 4vw;
+        border-right: none;
+        border-top-left-radius: 1vw;
+        border-bottom-left-radius: 1vw;
+    }
+    .fonn{
+        height: 100vh;
+    }
+    #container{
+        margin-top: 5vw;
     }
 }
