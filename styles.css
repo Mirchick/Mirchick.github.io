@@ -1,4 +1,5 @@
 @media (min-width:0px) and (orientation: portrait){
+    /*--------------INDEX.HTML--------------*/
     .nav-link,.nav-link.active{
         font-size: 4vw;
     }
@@ -8,7 +9,7 @@
         padding-top: 5vw;
         margin-bottom: 7vw;
     }
-    #chCl,#chCl1{
+    #chCl,#chCl1,#chCl2,#chCl3{
         width: 55vw;
         height: 38vw;
     }
@@ -20,6 +21,13 @@
         font-size: 3.5vw;
         margin-left: 1vw;
     }
+    #text1_4,#text1_5{
+        font-size: 3.5vw;
+        margin-left: 1vw;
+    }
+    .d-flex.justify-content-center{
+        margin-bottom: 2vh;
+    }
     #exampleWord,#exampleWord1{
         font-size: 8vw;
         padding-top: 7vw;
@@ -28,14 +36,20 @@
         margin-top: 5vw;
         font-size: 3.5vw;
     }
+    #examplePhrase2,#examplePhrase3{
+        font-size: 5vw;
+        padding-top: 7vw;
+    }
+    /*--------------WORDS.HTML--------------*/
     .dropdown{
         max-width: 30vw;
+        float: right;
     }
     .btn.btn-secondary.dropdown-toggle{
-        font-size: 2.4vw;
+        font-size: 2.6vw;
     }
     .description{
-        padding-top: 5vw;
+        padding-top: 8vw;
         text-align: center;
         font-size: 3.5vw;
     }
@@ -115,6 +129,7 @@
         right:3.3vw;
         border-radius:1.2vw;
     }
+    /*--------------TEST.HTML--------------*/
     #start{
         max-width: 60vw;
         margin-left: auto;
@@ -198,6 +213,7 @@
 }
 
 @media (min-width:200px) and (orientation: landscape){
+    /*--------------INDEX.HTML--------------*/
     .nav-link,.nav-link.active{
         font-size: 1.5vw;
     }
@@ -207,7 +223,7 @@
         padding-top: 3vw;
         margin-bottom: 4vw;
     }
-    #chCl,#chCl1{
+    #chCl,#chCl1,#chCl2,#chCl3{
         width: 33vw;
         height: 25vw;
     }
@@ -219,6 +235,13 @@
         font-size: 2vw;
         margin-left: 0.5vw;
     }
+    #text1_4,#text1_5{
+        font-size: 2vw;
+        margin-left: 0.9vw;
+    }
+    .d-flex.justify-content-center{
+        margin-bottom: 5vh;
+    }
     #exampleWord,#exampleWord1{
         font-size: 4.8vw;
         padding-top: 5vw;
@@ -227,14 +250,20 @@
         margin-top: 5vw;
         font-size: 1.6vw;
     }
+    #examplePhrase2,#examplePhrase3{
+        font-size: 3vw;
+        padding-top: 6vw;
+    }
+    /*--------------WORDS.HTML--------------*/
     .dropdown{
         max-width: 30vw;
+        float: right;
     }
     .btn.btn-secondary.dropdown-toggle{
-        font-size: 1vw;
+        font-size: 1.1vw;
     }
     .description{
-        padding-top: 2vw;
+        padding-top: 4vw;
         text-align: center;
         font-size: 2vw;
         max-width: 80vw;
@@ -297,6 +326,7 @@
         right:1.1vw;
         border-radius:0.5vw;
     }
+    /*--------------TEST.HTML--------------*/
     #start{
         max-width: 30vw;
         margin-left: auto;
@@ -385,6 +415,7 @@
 }
 
 @media (min-width:1800px) and (orientation: landscape){
+    /*--------------INDEX.HTML--------------*/
     .nav-link,.nav-link.active{
         font-size: 1.5vw;
     }
@@ -394,7 +425,7 @@
         padding-top: 3vw;
         margin-bottom: 4vw;
     }
-    #chCl,#chCl1{
+    #chCl,#chCl1,#chCl2,#chCl3{
         width: 28vw;
         height: 20vw;
     }
@@ -406,6 +437,13 @@
         font-size: 1.6vw;
         margin-left: 0.5vw;
     }
+    #text1_4,#text1_5{
+        font-size: 1.6vw;
+        margin-left: 0.5vw;
+    }
+    .d-flex.justify-content-center{
+        margin-bottom: 5vh;
+    }
     #exampleWord,#exampleWord1{
         font-size: 4.8vw;
         padding-top: 3.5vw;
@@ -414,6 +452,11 @@
         margin-top: 3.5vw;
         font-size: 1.6vw;
     }
+    #examplePhrase2,#examplePhrase3{
+        font-size: 2.5vw;
+        padding-top: 4.5vw;
+    }
+    /*--------------WORDS.HTML--------------*/
     .dropdown{
         max-width: 30vw;
     }
@@ -421,7 +464,7 @@
         font-size: 1vw;
     }
     .description{
-        padding-top: 2vw;
+        padding-top: 4vw;
         text-align: center;
         font-size: 2vw;
         max-width: 80vw;
@@ -485,6 +528,7 @@
         right:1.1vw;
         border-radius:0.5vw;
     }
+    /*--------------TEST.HTML--------------*/
     #start{
         max-width: 30vw;
         margin-left: auto;
@@ -571,3 +615,9 @@
         margin-top: 5vw;
     }
 }
+
+
+/*General common settings*/
+.try{
+        text-decoration: none;
+    }
