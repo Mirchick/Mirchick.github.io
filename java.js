@@ -7,6 +7,11 @@ let cardExample1 = document.querySelector('#cardExample1')
 let exampleWord1 = document.querySelector('#exampleWord1')
 let examplePhrase1 = document.querySelector('#examplePhrase1')
 let dada = 1
+let navigation = document.querySelectorAll('.navigation')
+let changing = 0
+let hideScroll1 = document.querySelector('#hideScroll')
+
+
 
 
 let {word,trans,phrase,phraseT} = arr1[0]
@@ -19,6 +24,23 @@ cardExample.addEventListener('click',change)
 /*document.getElementById('chCl').classList.remove("card text-white bg-primary mb-3");
 document.getElementById('chCl').classList.add("card text-bg-secondary mb-3");
 document.getElementById('chCl').className = "card text-bg-secondary mb-3"*/
+
+function hideScroll(){
+    if (changing == 0){
+        for (element of navigation){
+            element.style.display = 'none'
+        }
+        changing++
+        hideScroll1.innerHTML = '///'
+    }
+    else if (changing == 1){
+        for (element of navigation){
+            element.style.display = 'block'
+        }
+        changing--
+        hideScroll1.innerHTML = 'X'
+    }
+}
 
 function change(){
     if (i == 1){

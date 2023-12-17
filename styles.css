@@ -1,7 +1,65 @@
 @media (min-width:0px) and (orientation: portrait){
     /*--------------INDEX.HTML--------------*/
-    .nav-link,.nav-link.active{
-        font-size: 4vw;
+    /*body{
+        overflow: hidden;
+    }*/
+    #hideScroll{
+        position: fixed;
+        right: 0vw;
+        top:5vh;
+        border-radius: 1vw;
+        width: 8vw;
+        max-width: 8vw;
+        height: 8vw;
+        font-size: 3vw;
+        z-index: 2;
+        opacity: 0.5;
+    }
+    #firstSection{
+        position: fixed;
+        right: 0vw;
+        top:20vh;
+        z-index: 2;
+        opacity: 0.5;
+    }
+    #secondSection{
+        position: fixed;
+        right: 0vw;
+        top:40vh;
+        z-index: 2;
+        opacity: 0.5;
+    }
+    #lastSection{
+        position: fixed;
+        right: 0vw;
+        top:60vh;
+        z-index: 2;
+        opacity: 0.5;
+    }
+    #firstSection1{
+        border-radius: 1vw;
+        border-top-right-radius: 3vw;
+        border-top-left-radius: 3vw;
+        width: 8vw;
+        height: 20vh;
+        font-size: 10vw;
+    }
+    #secondSection1{
+        border-radius: 1vw;
+        width: 8vw;
+        height: 20vh;
+        font-size: 3vw;
+    }
+    #lastSection1{
+        border-radius: 1vw;
+        border-bottom-right-radius: 3vw;
+        border-bottom-left-radius: 3vw;
+        width: 8vw;
+        height: 20vh;
+        font-size: 10vw;
+    }
+    #firstSection:active,#secondSection:active,#lastSection:active,#hideScroll:active{
+        opacity: 1;
     }
     #text1_1{
         font-size: 4vw;
@@ -16,6 +74,16 @@
     .card.border-dark.text-bg-secondary.mb-3{
         width: 40vw;
         height: 38vw;
+    }
+    #cardExample2{
+        background-image: url('images/primer1.png');
+        background-size: cover;
+        border-radius: 1vw;
+    }
+    #cardExample3{
+        background-image: url('images/primer2.jpg');
+        background-size: cover;
+        border-radius: 1vw;
     }
     #text1_2,#text1_3{
         font-size: 3.5vw;
@@ -43,7 +111,7 @@
     /*--------------WORDS.HTML--------------*/
     .dropdown{
         max-width: 30vw;
-        float: right;
+        float: left;
     }
     .btn.btn-secondary.dropdown-toggle{
         font-size: 2.6vw;
@@ -54,6 +122,8 @@
         font-size: 3.5vw;
     }
     #add{
+        display: block;
+        margin-top: 20vw;
         width: 40vw;
         max-width: 40vw;
         margin-left: auto;
@@ -78,7 +148,7 @@
         font-size:2vw;
         padding-left:3vw
     }
-    #none{
+    #notVisible{
         max-width: 96vw;
         margin-left: auto;
         margin-right: auto;
@@ -98,6 +168,11 @@
     .card-text.text-center.mid{
         font-size: 5vw;
         padding-top: 7vw;
+    }
+    .cardNoWords{
+        font-size: 8vw;
+        padding-top: 9vw;
+        text-align: center;
     }
     .btn.btn-success.small{
         color:white;
@@ -135,14 +210,14 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 3vw;
-        margin-top: 10vw;
+        margin-top: 40vh;
     }
     #finish{
         max-width: 40vw;
         margin-left: auto;
         margin-right: auto;
         font-size: 3vw;
-        margin-bottom: 30vw;
+        margin-bottom: 30vh;
     }
     .card.border-dark.text-dark.bg-light.mb-3.help{
         max-width: 80vw;
@@ -165,6 +240,7 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 5vw;
+        padding-bottom: 100vh;
     }
     #reff1,#reff2{
         border: 0.5vw solid black;
@@ -205,7 +281,7 @@
         border-bottom-left-radius: 1vw;
     }
     #container{
-        margin-top: 20vw;
+        margin-top: 20vh;
     }
     .fonn{
         height: 100vh;
@@ -295,7 +371,7 @@
         font-size:0.8vw;
         padding-left:0.3vw
     }
-    #none{
+    #notVisible{
         max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
@@ -496,7 +572,7 @@
         font-size:0.8vw;
         padding-left:0.3vw
     }
-    #none{
+    #notVisible{
         max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
