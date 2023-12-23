@@ -36,8 +36,10 @@ function startTest(){
     inter.value = ''
     progress.innerHTML = ''
     score = 0
-    start.className = 'btn btn-primary invisible'
-    finish.className = 'btn btn-primary visible'
+    /*start.className = 'btn btn-primary invisible'*/
+    start.style.display = 'none'
+    /*finish.className = 'btn btn-primary visible'*/
+    finish.style.display = 'block'
     arr2 = [{'To take':'Взять','turn':false},{'To eat':'Есть','turn':false},{'To be':'Быть','turn':false},{'To wash':'Мыть','turn':false},{'To bring':'Приносить','turn':false},{'To stay':'Оставаться','turn':false},{'To hold':'Держать','turn':false},{'To swim':'Плавать','turn':false},{'To think':'Думать','turn':false},{'To rise':'Поднимать','turn':false},{'To clean':'Чистить','turn':false},{'To look':'Смотреть','turn':false},
     {'To love':'Любить','turn':false},{'To create':'Создавать','turn':false},{'To live':'Жить','turn':false},{'To hate':'Ненавидеть','turn':false},{'To dream':'Мечтать','turn':false},{'To lose':'Проигрывать','turn':false},{'To turn':'Поворачивать','turn':false},{'To add':'Добавлять','turn':false},{'To drink':'Пить','turn':false},{'To die':'Умирать','turn':false},{'To realize':'Осознавать','turn':false},{'To feel':'Чувствовать','turn':false},
     {'Dog': 'Dog','turn': false},{'word': 'Horse','turn': false},{'word': 'Zebra', 'turn': false},{'word': 'Lion','turn': false},
@@ -55,8 +57,10 @@ function finishTest(){
     list1.innerHTML = ''
     inter.value = ''
     progress.innerHTML = ''
-    start.className = 'btn btn-primary visible'
-    finish.className = 'btn btn-primary invisible'
+    start.style.display = 'block'
+    finish.style.display = 'none'
+    /*start.className = 'btn btn-primary visible'
+    finish.className = 'btn btn-primary invisible'*/
     checking.className = 'input-group mb-3 invisible'
 }
 

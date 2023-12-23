@@ -1,71 +1,45 @@
 @media (min-width:0px) and (orientation: portrait){
     /*--------------INDEX.HTML--------------*/
-    /*body{
-        overflow: hidden;
-    }*/
-    #hideScroll{
+    #navigation{
         position: fixed;
-        right: 0vw;
-        top:5vh;
-        border-radius: 1vw;
-        width: 8vw;
-        max-width: 8vw;
-        height: 8vw;
-        font-size: 3vw;
-        z-index: 2;
-        opacity: 0.5;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        background-color: white;
     }
-    #firstSection{
-        position: fixed;
-        right: 0vw;
-        top:20vh;
-        z-index: 2;
-        opacity: 0.5;
+    .navButtons:nth-child(1){
+        padding: 0vw 6.5vw;
+        border:none;
+        background-color: white;
     }
-    #secondSection{
-        position: fixed;
-        right: 0vw;
-        top:40vh;
-        z-index: 2;
-        opacity: 0.5;
+    .navButtons:nth-child(2){
+        padding: 0vw 5vw;
+        border:none ;
+        background-color: white;
     }
-    #lastSection{
-        position: fixed;
-        right: 0vw;
-        top:60vh;
-        z-index: 2;
-        opacity: 0.5;
+    .navButtons:nth-child(3){
+        padding: 0vw 7.5vw;
+        border:none;
+        background-color: white;
     }
-    #firstSection1{
-        border-radius: 1vw;
-        border-top-right-radius: 3vw;
-        border-top-left-radius: 3vw;
-        width: 8vw;
-        height: 20vh;
-        font-size: 10vw;
+    .navRef{
+        font-size: 7vw;
+        border: none;
+        margin-left: 0;
+        background-color: white;
+        text-decoration: none;
+        color: black;
     }
-    #secondSection1{
-        border-radius: 1vw;
-        width: 8vw;
-        height: 20vh;
-        font-size: 3vw;
-    }
-    #lastSection1{
-        border-radius: 1vw;
-        border-bottom-right-radius: 3vw;
-        border-bottom-left-radius: 3vw;
-        width: 8vw;
-        height: 20vh;
-        font-size: 10vw;
-    }
-    #firstSection:active,#secondSection:active,#lastSection:active,#hideScroll:active{
-        opacity: 1;
+    .navRef:active{
+        color: blue;
     }
     #text1_1{
         font-size: 4vw;
         text-align: center;
-        padding-top: 5vw;
+        padding-top: 3vw;
         margin-bottom: 7vw;
+        background-color: white;
+        padding-bottom: 2vw;
     }
     #chCl,#chCl1,#chCl2,#chCl3{
         width: 55vw;
@@ -211,12 +185,15 @@
         margin-right: auto;
         font-size: 3vw;
         margin-top: 40vh;
+        margin-bottom: 30vh;
     }
     #finish{
+        display: none;
         max-width: 40vw;
         margin-left: auto;
         margin-right: auto;
         font-size: 3vw;
+        margin-top: 40vh;
         margin-bottom: 30vh;
     }
     .card.border-dark.text-dark.bg-light.mb-3.help{
@@ -232,6 +209,7 @@
     }
     #checking{
         max-width: 60vw;
+        width: 60vw;
         margin-left: auto;
         margin-right: auto;
     }

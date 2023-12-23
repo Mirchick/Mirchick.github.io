@@ -10,11 +10,9 @@
 </head>
 <body>
   <div style="background-image: url(images/fon.jpg);background-attachment: fixed;">
-    <button id = 'hideScroll' onclick = 'hideScroll()'>X</button>
-    <a class = 'navigation' id = 'firstSection' href="#text1_1"><button id = 'firstSection1'>↑</button></a>
-    <a class = 'navigation' id = 'secondSection' href="#words"><button id = 'secondSection1'>⚫</button></a>
-    <a class = 'navigation' id = 'lastSection' href="#start"><button id = 'lastSection1'>↓</button></a>
-    <p id='text1_1' >Чем удобен наш сайт по изучению английского языка:</p>
+    <div id="nachalo">
+      <p id='text1_1' >Чем удобен наш сайт по изучению английского языка:</p>
+    </div>
     <div class="d-flex justify-content-center">
       <div id = 'chCl' class="card border-dark text-dark bg-light mb-3">
         <div id = 'cardExample' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
@@ -95,11 +93,11 @@
     <div id = 'container'>
     </div>
     <div id = 'test'>
-      <div class="d-grid col-8 mx-auto">
-        <button id = 'start' class="btn btn-primary visible" onclick = startTest()>Начать тест</button>
+      <div id = 'testStart' class="d-grid col-8 mx-auto">
+        <button id = 'start' class="btn btn-primary" onclick = startTest()>Начать тест</button>
       </div>
       <div class="d-grid col-8 mx-auto">
-        <button id = 'finish' class="btn btn-primary invisible" onclick = finishTest()>Завершить тест</button>
+        <a href="#start"><button id = 'finish' class="btn btn-primary" onclick = finishTest()>Завершить тест</button></a>
       </div>
       <div id="listTest">
       </div>
@@ -111,6 +109,11 @@
         <p id = 'fin'></p>
       </div>
       <div id = 'progress'>
+      </div>
+      <div id="navigation">
+        <button class="navButtons"><a href="#words" class = 'navRef'>Слова</a></button>
+        <button class="navButtons"><a href="#nachalo" class = 'navRef'>Главная</a></button>
+        <button class="navButtons"><a href="#start" class = 'navRef'>Тест</a></button>
       </div>
     </div>
   </div>
