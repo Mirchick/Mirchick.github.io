@@ -10,9 +10,19 @@ let dada = 1
 let navigation = document.querySelectorAll('.navigation')
 let changing = 0
 let hideScroll1 = document.querySelector('#hideScroll')
+let block1 = document.querySelector('#block1')
+let block2 = document.querySelector('#block2')
+let block3 = document.querySelector('#block3')
+block2.style.display = 'none'
+block3.style.display = 'none'
 
 
-
+function changeBlocks(block){
+    block1.style.display = 'none'
+    block2.style.display = 'none'
+    block3.style.display = 'none'
+    block.style.display = 'block'
+}
 
 let {word,trans,phrase,phraseT} = arr1[0]
 exampleWord.innerHTML = word

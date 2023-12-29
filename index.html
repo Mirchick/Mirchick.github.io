@@ -9,112 +9,120 @@
   <link href = 'styles.css' rel = 'stylesheet'>
 </head>
 <body>
-  <div style="background-image: url(images/fon.jpg);background-attachment: fixed;">
-    <div id="nachalo">
-      <p id='text1_1' >Чем удобен наш сайт по изучению английского языка:</p>
-    </div>
-    <div class="d-flex justify-content-center">
-      <div id = 'chCl' class="card border-dark text-dark bg-light mb-3">
-        <div id = 'cardExample' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-          <h1 id = 'exampleWord' class ="card-title text-center">To take</h1>
-          <p id = 'examplePhrase' class="card-text text-center">To take a hat</p>
+  <div style="background-image: url(images/fon.jpg);background-attachment: scroll;background-size: contain;">
+    <div id="block1">
+      <div id="nachalo">
+        <p id='text1_1' >Чем удобен наш сайт по изучению английского языка:</p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div id = 'chCl' class="card border-dark text-dark bg-light mb-3">
+          <div id = 'cardExample' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+            <h1 id = 'exampleWord' class ="card-title text-center">To take</h1>
+            <p id = 'examplePhrase' class="card-text text-center">To take a hat</p>
+          </div>
+        </div>
+        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
+          <p id = 'text1_2' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете узнать значение любого незнакомого слова с помощью клика по карточке. Попробуйте кликнуть по карточке слева</p>
         </div>
       </div>
-      <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-        <p id = 'text1_2' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете узнать значение любого незнакомого слова с помощью клика по карточке. Попробуйте кликнуть по карточке слева</p>
-      </div>
-    </div>
-    <div class="d-flex justify-content-center">
-      <div id = 'chCl1' class="card border-dark text-dark bg-light mb-3">
-        <div id = 'cardExample1' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-          <h1 id = 'exampleWord1' class ="card-title text-center">To live</h1>
-          <p id = 'examplePhrase1' class="card-text text-center">To live long</p>
-          <button id = 'exampleButton' onclick = replacing()>✓</button>
+      <div class="d-flex justify-content-center">
+        <div id = 'chCl1' class="card border-dark text-dark bg-light mb-3">
+          <div id = 'cardExample1' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+            <h1 id = 'exampleWord1' class ="card-title text-center">To live</h1>
+            <p id = 'examplePhrase1' class="card-text text-center">To live long</p>
+            <button id = 'exampleButton' onclick = replacing()>✓</button>
+          </div>
+        </div>
+        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
+          <p id = 'text1_3' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете отмечать слова, которые уже знаете, нажав на галочку, которая относится к этой карточке. Попробуйте нажать на галочку</p>
         </div>
       </div>
-      <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-        <p id = 'text1_3' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете отмечать слова, которые уже знаете, нажав на галочку, которая относится к этой карточке. Попробуйте нажать на галочку</p>
-      </div>
-    </div>
-
-    <div class="d-flex justify-content-center">
-      <a class = 'try' href="words.html"><div id = 'chCl2' class="card border-dark text-dark bg-light mb-3">
-        <div id = 'cardExample2' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+  
+      <div class="d-flex justify-content-center">
+        <a class = 'try' href="words.html"><div id = 'chCl2' class="card border-dark text-dark bg-light mb-3">
+          <div id = 'cardExample2' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+          </div>
+        </div></a>
+        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
+          <p id = 'text1_4' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">А ещё Вы можете добавлять свои слова на вкладке "Слова", чтобы макимально персонализировать своё обучение под себя</p>
         </div>
-      </div></a>
-      <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-        <p id = 'text1_4' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">А ещё Вы можете добавлять свои слова на вкладке "Учить слова", чтобы персонализировать своё обучение под себя</p>
       </div>
-    </div>
-    <div class="d-flex justify-content-center">
-      <a class = 'try' href="test.html"><div id = 'chCl3' class="card border-dark text-dark bg-light mb-3">
-        <div id = 'cardExample3' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+      <div class="d-flex justify-content-center" style="padding-bottom: 10vh;">
+        <a class = 'try' href="test.html"><div id = 'chCl3' class="card border-dark text-dark bg-light mb-3">
+          <div id = 'cardExample3' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
+          </div>
+        </div></a>
+        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
+          <p id = 'text1_5' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Перейдя на вкладку "Тест" Вы сможете проверить свои знания и увидеть результат, который в процентах покажет Ваш текущий прогресс</p>
         </div>
-      </div></a>
-      <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-        <p id = 'text1_5' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Перейдя на вкладку "Тест" Вы можете проверить свои знания и увидеть результат, который в процентах покажет Ваш прогресс</p>
       </div>
     </div>
-    <div id = 'words' class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Категории слов
-      </button>
-      <ul class="dropdown-menu">
-        <li><button class="dropdown-item" onclick="mainArr = verbs,mainArr = verbs,mainArrStr = 'verbs',mainArrStrT = 'Глаголы',current = 0,render()">Глаголы</button></li>
-        <li><button class="dropdown-item" onclick="mainArr = animals,mainArr = animals,mainArrStr = 'animals',mainArrStrT = 'Животные',current = 0,render()">Животные</button></li>
-        <li><button class="dropdown-item" onclick="mainArr = professions,mainArr = professions,mainArrStr = 'professions',mainArrStrT = 'Профессии',current = 0,render()">Профессии</button></li>
-        <li><button class="dropdown-item" onclick="mainArr = food,mainArr = food,mainArrStr = 'food',mainArrStrT = 'Еда',current = 0,render()">Еда</button></li>
-        <li><button class="dropdown-item" onclick="mainArr = school,mainArr = school,mainArrStr = 'school',mainArrStrT = 'Школа',current = 0,render()">Школа</button></li>
-        <li><button class="dropdown-item" onclick="mainArr = human,mainArr = human,mainArrStr = 'human',mainArrStrT = 'Человек',current = 0,render()">Человек</button></li>
-        <li><button class="dropdown-item" onclick="mainArr = properties,mainArr = properties,mainArrStr = 'properties',mainArrStrT = 'Свойства',current = 0,render()">Свойства</button></li>
-      </ul>
+    <div id="block2" style="height: 100vh;">
+      <div id = 'words' class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Категории слов
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" onclick="mainArr = verbs,mainArr = verbs,mainArrStr = 'verbs',mainArrStrT = 'Глаголы',current = 0,render()">Глаголы</button></li>
+          <li><button class="dropdown-item" onclick="mainArr = animals,mainArr = animals,mainArrStr = 'animals',mainArrStrT = 'Животные',current = 0,render()">Животные</button></li>
+          <li><button class="dropdown-item" onclick="mainArr = professions,mainArr = professions,mainArrStr = 'professions',mainArrStrT = 'Профессии',current = 0,render()">Профессии</button></li>
+          <li><button class="dropdown-item" onclick="mainArr = food,mainArr = food,mainArrStr = 'food',mainArrStrT = 'Еда',current = 0,render()">Еда</button></li>
+          <li><button class="dropdown-item" onclick="mainArr = school,mainArr = school,mainArrStr = 'school',mainArrStrT = 'Школа',current = 0,render()">Школа</button></li>
+          <li><button class="dropdown-item" onclick="mainArr = human,mainArr = human,mainArrStr = 'human',mainArrStrT = 'Человек',current = 0,render()">Человек</button></li>
+          <li><button class="dropdown-item" onclick="mainArr = properties,mainArr = properties,mainArrStr = 'properties',mainArrStrT = 'Свойства',current = 0,render()">Свойства</button></li>
+        </ul>
+      </div>
+      <div style='padding-top: 8vh;'>
+        <button id = 'add' class="btn btn-dark visible" type="button" onclick = show()>Добавить слово</button>
+      </div>
+      <div id = 'notVisible' class="input-group mb-3 invisible">
+        <div class="form-floating">
+          <input class="form-control" id="maker1">
+          <label id = 'l1' for="maker1">Слово (англ)</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" id="maker2">
+          <label id = 'l2' for="maker2">Перевод</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" id="maker3">
+          <label id = 'l3' for="maker3">Фраза (англ)*</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" id="maker4">
+          <label id = 'l4' for="maker4">Перевод*</label>
+        </div>
+        <button class="btn btn-dark" type="button" onclick="addition()">Добавить</button>
+      </div>
+      <label id = 'notVisibleLabel' for="notVisible" class = 'invisible' style = "position:absolute;left:20vw;">*Параметры по желанию</label>
+      <div id = 'container'>
+      </div>
     </div>
-      <button id = 'add' class="btn btn-dark visible" type="button" onclick = show()>Добавить слово</button>
-    <div id = 'notVisible' class="input-group mb-3 invisible">
-      <div class="form-floating">
-        <input class="form-control" id="maker1">
-        <label id = 'l1' for="maker1">Слово (англ)</label>
+    <div id="block3" style="height: 100vh;">
+      <div id = 'test'>
+        <div id = 'testStart' class="d-grid col-8 mx-auto">
+          <button id = 'start' class="btn btn-primary" onclick = startTest()>Начать тест</button>
+        </div>
+        <div class="d-grid col-8 mx-auto">
+          <a href="#start"><button id = 'finish' class="btn btn-primary" onclick = finishTest()>Завершить тест</button></a>
+        </div>
+        <div id="listTest">
+        </div>
+        <div id = 'checking' class="input-group mb-3 invisible">
+          <input type="text" id = 'inter' class="form-control" placeholder="Введите перевод" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-dark" id="button-addon2" onclick = check() type="button">Далее</button>
+        </div>
+        <div>
+          <p id = 'fin'></p>
+        </div>
+        <div id = 'progress'>
+        </div>
       </div>
-      <div class="form-floating">
-        <input class="form-control" id="maker2">
-        <label id = 'l2' for="maker2">Перевод</label>
-      </div>
-      <div class="form-floating">
-        <input class="form-control" id="maker3">
-        <label id = 'l3' for="maker3">Фраза (англ)*</label>
-      </div>
-      <div class="form-floating">
-        <input class="form-control" id="maker4">
-        <label id = 'l4' for="maker4">Перевод*</label>
-      </div>
-      <button class="btn btn-dark" type="button" onclick="addition()">Добавить</button>
     </div>
-    <label id = 'notVisibleLabel' for="notVisible" class = 'invisible' style = "position:absolute;left:20vw;">*Параметры по желанию</label>
-    <div id = 'container'>
-    </div>
-    <div id = 'test'>
-      <div id = 'testStart' class="d-grid col-8 mx-auto">
-        <button id = 'start' class="btn btn-primary" onclick = startTest()>Начать тест</button>
-      </div>
-      <div class="d-grid col-8 mx-auto">
-        <a href="#start"><button id = 'finish' class="btn btn-primary" onclick = finishTest()>Завершить тест</button></a>
-      </div>
-      <div id="listTest">
-      </div>
-      <div id = 'checking' class="input-group mb-3 invisible">
-        <input type="text" id = 'inter' class="form-control" placeholder="Введите перевод" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-dark" id="button-addon2" onclick = check() type="button">Далее</button>
-      </div>
-      <div>
-        <p id = 'fin'></p>
-      </div>
-      <div id = 'progress'>
-      </div>
-      <div id="navigation">
-        <button class="navButtons"><a href="#words" class = 'navRef'>Слова</a></button>
-        <button class="navButtons"><a href="#nachalo" class = 'navRef'>Главная</a></button>
-        <button class="navButtons"><a href="#start" class = 'navRef'>Тест</a></button>
-      </div>
+    <div id="navigation">
+      <button onclick = 'changeBlocks(block2),finishTest()' class = "navButtons">Слова</button>
+      <button onclick = 'changeBlocks(block1),finishTest()' class="navButtons">Главная</button>
+      <button onclick = 'changeBlocks(block3)' class="navButtons">Тест</button>
     </div>
   </div>
   <script src = 'java.js'></script>
