@@ -58,6 +58,7 @@ function check(){
                     inter.value = ''
                     arr2.shift()
                     newWord()
+                    inter.focus()
                     if (arr2.length == 0){
                         checking.className = 'input-group mb-3 invisible'
                         fin.innerHTML = `Тест завершён, Ваш счёт: ${score} из ${lengthArr}`
@@ -73,6 +74,7 @@ function check(){
                     inter.value = ''
                     arr2.shift()
                     newWord()
+                    inter.focus()
                     if (arr2.length == 0){
                         checking.className = 'input-group mb-3 invisible' 
                         fin.innerHTML = `Тест завершён, Ваш счёт: ${score} из ${lengthArr}`

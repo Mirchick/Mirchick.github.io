@@ -9,11 +9,9 @@
   <link href = 'styles.css' rel = 'stylesheet'>
 </head>
 <body>
-  <div style="background-image: url(images/fon.jpg);background-attachment: scroll;background-size: contain;">
+  <div style="background-color: #f5fcff;background-attachment: scroll;background-size: contain;">
     <div id="block1">
-      <div id="nachalo">
-        <p id='text1_1' >Чем удобен наш сайт по изучению английского языка:</p>
-      </div>
+      <span class="badge">Чем удобен наш сайт по изучению английского языка:</span>
       <div class="d-flex justify-content-center">
         <div id = 'chCl' class="card border-dark text-dark bg-light mb-3">
           <div id = 'cardExample' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
@@ -53,7 +51,7 @@
           </div>
         </div></a>
         <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-          <p id = 'text1_5' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Перейдя на вкладку "Тест" Вы сможете проверить свои знания и увидеть результат, который в процентах покажет Ваш текущий прогресс</p>
+          <p id = 'text1_5' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Перейдя на вкладку "Тесты" Вы сможете проверить свои знания и увидеть результат, который в процентах покажет Ваш текущий прогресс</p>
         </div>
       </div>
     </div>
@@ -100,11 +98,13 @@
     </div>
     <div id="block3" style="height: 100vh;">
       <div id = 'test'>
+        <div>
+          <p id = 'fin'></p>
+        </div>
+        <div id = 'progress'>
+        </div>
         <div id = 'testStart' class="d-grid col-8 mx-auto">
           <button id = 'start' class="btn btn-primary" onclick = startTest()>Начать тест</button>
-        </div>
-        <div class="d-grid col-8 mx-auto">
-          <a href="#start"><button id = 'finish' class="btn btn-primary" onclick = finishTest()>Завершить тест</button></a>
         </div>
         <div id="listTest">
         </div>
@@ -112,17 +112,20 @@
           <input type="text" id = 'inter' class="form-control" placeholder="Введите перевод" aria-label="Recipient's username" aria-describedby="button-addon2">
           <button class="btn btn-dark" id="button-addon2" onclick = check() type="button">Далее</button>
         </div>
-        <div>
-          <p id = 'fin'></p>
-        </div>
-        <div id = 'progress'>
+        <div class="d-grid col-8 mx-auto">
+          <a href="#start"><button id = 'finish' class="btn btn-primary" onclick = finishTest()>Завершить тест</button></a>
         </div>
       </div>
     </div>
-    <div id="navigation">
-      <button onclick = 'changeBlocks(block2),finishTest()' class = "navButtons">Слова</button>
-      <button onclick = 'changeBlocks(block1),finishTest()' class="navButtons">Главная</button>
-      <button onclick = 'changeBlocks(block3)' class="navButtons">Тест</button>
+    <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+      <input onclick = 'changeBlocks(block2,but1),finishTest()' type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+      <label id = 'but1' class="btn btn-primary help" for="btnradio1">Слова</label>
+    
+      <input onclick = 'changeBlocks(block1,but2),finishTest()' type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+      <label id = 'but2' class="btn btn-primary help" for="btnradio2">Главная</label>
+    
+      <input onclick = 'changeBlocks(block3,but3)' type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+      <label id = 'but3' class="btn btn-primary help" for="btnradio3">Тесты</label>
     </div>
   </div>
   <script src = 'java.js'></script>

@@ -16,13 +16,22 @@ let block3 = document.querySelector('#block3')
 block2.style.display = 'none'
 block3.style.display = 'none'
 
+let but1 = document.querySelector('#but1')
+let but2 = document.querySelector('#but2')
+let but3 = document.querySelector('#but3')
+but2.style.backgroundColor = '#199bf7'
 
-function changeBlocks(block){
+function changeBlocks(block,button){
     block1.style.display = 'none'
     block2.style.display = 'none'
     block3.style.display = 'none'
     block.style.display = 'block'
+    but1.style.backgroundColor = '#64bbfa'
+    but2.style.backgroundColor = '#64bbfa'
+    but3.style.backgroundColor = '#64bbfa'
+    button.style.backgroundColor = '#199bf7'
 }
+
 
 let {word,trans,phrase,phraseT} = arr1[0]
 exampleWord.innerHTML = word
