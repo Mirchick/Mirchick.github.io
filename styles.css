@@ -6,12 +6,12 @@
         bottom: 0;
         display: flex;
         justify-content: space-around;
-        width: 100svw;
+        width: 100vw;
         background-image: linear-gradient(white,#CCCCCC);
     }
     .navButtons{
         box-sizing: border-box;
-        font-size: 7svw;
+        font-size: 7vw;
         border: none;
         background-color: transparent;
         text-decoration: none;
@@ -21,223 +21,223 @@
         color: blue;
     }
     #chCl,#chCl1,#chCl2,#chCl3{
-        width: 55svw;
-        height: 38svw;
+        width: 55vw;
+        height: 38vw;
     }
     .card.border-dark.text-bg-secondary.mb-3{
-        width: 40svw;
-        height: 38svw;
+        width: 40vw;
+        height: 38vw;
     }
     #cardExample2{
         background-image: url('images/primer1.png');
         background-size: cover;
-        border-radius: 1svw;
+        border-radius: 1vw;
     }
     #cardExample3{
         background-image: url('images/primer2.jpg');
         background-size: cover;
-        border-radius: 1svw;
+        border-radius: 1vw;
     }
     #text1_2,#text1_3{
-        font-size: 3.5svw;
-        margin-left: 1svw;
+        font-size: 3.5vw;
+        margin-left: 1vw;
     }
     #text1_4,#text1_5{
-        font-size: 3.5svw;
-        margin-left: 1svw;
+        font-size: 3.5vw;
+        margin-left: 1vw;
     }
     .d-flex.justify-content-center{
-        margin-bottom: 2svh;
+        margin-bottom: 2vh;
     }
     #exampleWord,#exampleWord1{
-        font-size: 8svw;
-        padding-top: 7svw;
+        font-size: 8vw;
+        padding-top: 7vw;
     }
     #examplePhrase,#examplePhrase1{
-        margin-top: 5svw;
-        font-size: 3.5svw;
+        margin-top: 5vw;
+        font-size: 3.5vw;
     }
     #examplePhrase2,#examplePhrase3{
-        font-size: 5svw;
-        padding-top: 7svw;
+        font-size: 5vw;
+        padding-top: 7vw;
     }
     /*--------------WORDS.HTML--------------*/
     .dropdown{
-        max-width: 30svw;
+        max-width: 30vw;
         float: left;
     }
     .btn.btn-secondary.dropdown-toggle{
-        font-size: 2.6svw;
+        font-size: 2.6vw;
         display: block;
     }
     .description{
-        padding-top: 8svw;
+        padding-top: 8vw;
         text-align: center;
-        font-size: 3.5svw;
+        font-size: 3.5vw;
     }
     #add{
         display: block;
-        width: 40svw;
-        max-width: 40svw;
+        width: 40vw;
+        max-width: 40vw;
         margin-left: auto;
         margin-right: auto;
     }
     #maker1,#maker2,#maker3,#maker4{
-        font-size: 2.5svw;
+        font-size: 2.5vw;
     }
     #l1{
-        font-size:2svw;
-        padding-left:1.5svw
+        font-size:2vw;
+        padding-left:1.5vw
     }
     #l2{
-        font-size:2svw;
-        padding-left:3svw
+        font-size:2vw;
+        padding-left:3vw
     }
     #l3{
-        font-size:2svw;
-        padding-left:0.5svw
+        font-size:2vw;
+        padding-left:0.5vw
     }
     #l4{
-        font-size:2svw;
-        padding-left:3svw
+        font-size:2vw;
+        padding-left:3vw
     }
     #notVisible{
-        max-width: 96svw;
+        max-width: 96vw;
         margin-left: auto;
         margin-right: auto;
     }
     .card.border-dark.text-dark.bg-light.mb-3.mid,.card.border-dark.text-bg-dark.mb-3.mid{
-        width: 90svw;
-        height: 60svw;
-        max-width: 90svw;
+        width: 90vw;
+        height: 60vw;
+        max-width: 90vw;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 5svw;
+        border-radius: 5vw;
     }
     .card-title.text-center.mid{
-        font-size: 12svw;
-        padding-top: 10svw;
+        font-size: 12vw;
+        padding-top: 10vw;
     }
     .card-text.text-center.mid{
-        font-size: 5svw;
-        padding-top: 7svw;
+        font-size: 5vw;
+        padding-top: 7vw;
     }
     .cardNoWords{
-        font-size: 8svw;
-        padding-top: 9svw;
+        font-size: 8vw;
+        padding-top: 9vw;
         text-align: center;
     }
     .btn.btn-success.small{
         color:white;
-        height:5svw;
-        width:7svw;
-        font-size:2svw;
+        height:5vw;
+        width:7vw;
+        font-size:2vw;
         position:absolute;
-        bottom:1.5svw;
-        right:1.5svw;
-        border-radius:0.8svw;
+        bottom:1.5vw;
+        right:1.5vw;
+        border-radius:0.8vw;
     }
     .btn.btn-success.mid{
         color:white;
-        height:7svw;
-        width:10svw;
-        font-size:3svw;
+        height:7vw;
+        width:10vw;
+        font-size:3vw;
         position:absolute;
-        bottom:2.2svw;
-        right:2.2svw;
-        border-radius:1svw;
+        bottom:2.2vw;
+        right:2.2vw;
+        border-radius:1vw;
     }
     .btn.btn-success.big{
         color:white;
-        height:9svw;
-        width:13svw;
-        font-size:4svw;
+        height:9vw;
+        width:13vw;
+        font-size:4vw;
         position:absolute;
-        bottom:3.3svw;
-        right:3.3svw;
-        border-radius:1.2svw;
+        bottom:3.3vw;
+        right:3.3vw;
+        border-radius:1.2vw;
     }
     /*--------------TEST.HTML--------------*/
     #start{
-        max-width: 60svw;
+        max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 5svw;
+        font-size: 5vw;
     }
     #finish{
         display: none;
-        max-width: 40svw;
+        max-width: 40vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 3svw;
-        margin-top: 4svh;
+        font-size: 3vw;
+        margin-top: 4vh;
     }
     #listTest{
-        margin-top: 0svh;
+        margin-top: 0vh;
     }
     .card.border-dark.text-dark.bg-light.mb-3.help{
-        max-width: 80svw;
-        width: 80svw;
-        height: 60svw;
+        max-width: 80vw;
+        width: 80vw;
+        height: 60vw;
         margin-left: auto;
         margin-right: auto;
     }
     .card-title.text-center.help{
-        font-size: 12svw;
-        padding-top: 18svw;
+        font-size: 12vw;
+        padding-top: 18vw;
     }
     #checking{
-        max-width: 60svw;
-        width: 60svw;
+        max-width: 60vw;
+        width: 60vw;
         margin-left: auto;
         margin-right: auto;
     }
     #fin{
-        max-width: 80svw;
+        max-width: 80vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 5svw;
-        padding-top: 25svh;
+        font-size: 5vw;
+        padding-top: 25vh;
     }
     #reff1,#reff2{
-        border: 0.5svw solid black;
-        border-radius: 2svw;
-        padding: 1svw;
+        border: 0.5vw solid black;
+        border-radius: 2vw;
+        padding: 1vw;
         background-color: white;
         text-align: center;
-        margin-top: 10svw;
+        margin-top: 10vw;
     }
     #exampleButton{
         position: absolute;
-        right: 3svw;
-        bottom: 3svw;
-        width: 8svw;
-        height: 5svw;
+        right: 3vw;
+        bottom: 3vw;
+        width: 8vw;
+        height: 5vw;
         background-color: green;
         color:white;
-        border-radius: 0.5svw;
+        border-radius: 0.5vw;
         border: none;
-        font-size: 3svw;
+        font-size: 3vw;
     }
     .previous{
         position: absolute;
         left: 0;
-        top: 21svw;
-        font-size: 8svw;
-        border: 0.5svw solid black;
+        top: 21vw;
+        font-size: 8vw;
+        border: 0.5vw solid black;
         border-left: none;
-        border-top-right-radius: 2svw;
-        border-bottom-right-radius: 2svw;
+        border-top-right-radius: 2vw;
+        border-bottom-right-radius: 2vw;
     }
     .next{
         position: absolute;
         right: 0;
-        top: 21svw;
-        font-size: 8svw;
-        border: 0.5svw solid black;
+        top: 21vw;
+        font-size: 8vw;
+        border: 0.5vw solid black;
         border-right: none;
-        border-top-left-radius: 2svw;
-        border-bottom-left-radius: 2svw;
+        border-top-left-radius: 2vw;
+        border-bottom-left-radius: 2vw;
     }
     .firstOption{
         display: none;
@@ -246,13 +246,13 @@
         display: inline;
     }
     #container{
-        margin-top: 14svh;
+        margin-top: 14vh;
     }
     .fonn{
-        height: 100svh;
+        height: 100vh;
     }
     .btn-group.btn-group-lg{
-        width: 100svw;
+        width: 100vw;
         position: fixed;
         bottom: 0;
     }
@@ -263,9 +263,9 @@
         border-top-right-radius: 0;
     }
     .badge{
-        font-size: 5svw;
+        font-size: 5vw;
         text-wrap: wrap;
-        margin-bottom: 8svw;
+        margin-bottom: 8vw;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         background-color: #199bf7;
