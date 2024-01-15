@@ -1,12 +1,13 @@
 @media (min-width:0px) and (orientation: portrait){
     /*--------------INDEX.HTML--------------*/
-    .badge{
+    .firstDescription{
         font-size: 5vw;
         text-wrap: wrap;
         margin-bottom: 8vw;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
         background-color: #199bf7;
+        text-align: center;
+        color: white;
+        padding-bottom: 2vw;
     }
     #navigation{
         position: fixed;

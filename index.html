@@ -11,7 +11,7 @@
 <body>
   <div style="background-color: #f5fcff;background-attachment: scroll;background-size: contain;">
     <div id="block1" style="max-width: 100vw;">
-      <p class="badge">Чем удобен наш сайт по изучению английского языка:</p>
+      <p class="firstDescription">Чем удобен наш сайт по изучению английского языка:</p>
       <div class="d-flex justify-content-center">
         <div id = 'chCl' class="card border-dark text-dark bg-light mb-3">
           <div id = 'cardExample' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
@@ -102,13 +102,13 @@
           Категории слов
         </button>
         <ul class="dropdown-menu">
-          <li><button class="dropdown-item" onclick="gray(0)">Глаголы<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(1)">Животные<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(2)">Профессии<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(3)">Еда<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(4)">Школа<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(5)">Человек<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(6)">Свойства<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
+          <li><button class="dropdown-item" onclick="gray(0),addTestCategory(arrVerbs)">Глаголы<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
+          <li><button class="dropdown-item" onclick="gray(1),addTestCategory(arrAnimals)">Животные<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
+          <li><button class="dropdown-item" onclick="gray(2),addTestCategory(arrProfessions)">Профессии<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
+          <li><button class="dropdown-item" onclick="gray(3),addTestCategory(arrFood)">Еда<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
+          <li><button class="dropdown-item" onclick="gray(4),addTestCategory(arrSchool)">Школа<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
+          <li><button class="dropdown-item" onclick="gray(5),addTestCategory(arrHuman)">Человек<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
+          <li><button class="dropdown-item" onclick="gray(6),addTestCategory(arrProperties)">Свойства<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
         </ul>
       </div>
       <div id = 'test'>
