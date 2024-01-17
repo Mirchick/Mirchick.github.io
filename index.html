@@ -70,29 +70,28 @@
           <li><button class="dropdown-item" onclick="mainArr = properties,mainArr = properties,mainArrStr = 'properties',mainArrStrT = 'Свойства',current = 0,render()">Свойства</button></li>
         </ul>
       </div>
-      <div style='padding-top: 8vh;'>
-        <button id = 'add' class="btn btn-dark visible" type="button" onclick = show()>Добавить слово</button>
+      <div id = 'add'>
+        <button class="btn btn-dark visible" type="button" onclick = show()>Добавить слово</button>
       </div>
-      <div id = 'notVisible' class="input-group mb-3 invisible">
-        <div class="form-floating">
-          <input class="form-control" id="maker1">
-          <label id = 'l1' for="maker1">Слово (англ)</label>
+
+      <div id="notVisible">
+        <div class="input-group makers">
+          <input type="text" aria-label="First name" id="wordMaker" placeholder="Слово (англ)" class="form-control">
         </div>
-        <div class="form-floating">
-          <input class="form-control" id="maker2">
-          <label id = 'l2' for="maker2">Перевод</label>
+        <div class="input-group makers">
+          <input type="text" aria-label="Last name" id="transMaker" placeholder="Перевод" class="form-control">
         </div>
-        <div class="form-floating">
-          <input class="form-control" id="maker3">
-          <label id = 'l3' for="maker3">Фраза (англ)*</label>
+        <div class="input-group makers">
+          <input type="text" aria-label="Last name" id="phraseMaker" placeholder="Фраза (англ)   *по желанию" class="form-control">
         </div>
-        <div class="form-floating">
-          <input class="form-control" id="maker4">
-          <label id = 'l4' for="maker4">Перевод*</label>
+        <div class="input-group makers">
+          <input type="text" aria-label="Last name" id="phraseTMaker" placeholder="Перевод фразы   *по желанию" class="form-control">
         </div>
-        <button class="btn btn-dark" type="button" onclick="addition()">Добавить</button>
+        <div style="display: flex; justify-content: center;">
+          <button id = 'doneButton' class="btn btn-dark visible" style = 'width: 80vw;' type="button" onclick = addition()>Готово!</button>
+        </div>
       </div>
-      <label id = 'notVisibleLabel' for="notVisible" class = 'invisible' style = "position:absolute;left:20vw;">*Параметры по желанию</label>
+      
       <div id = 'container'>
       </div>
     </div>

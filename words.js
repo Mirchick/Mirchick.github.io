@@ -2,13 +2,12 @@
 let list = document.querySelector('#container')
 
 /*adding a word (inputs and a button)*/
-let maker1 = document.querySelector('#maker1')
-let maker2 = document.querySelector('#maker2')
-let maker3 = document.querySelector('#maker3')
-let maker4 = document.querySelector('#maker4')
+let wordMaker = document.querySelector('#wordMaker')
+let transMaker = document.querySelector('#transMaker')
+let phraseMaker = document.querySelector('#phraseMaker')
+let phraseTMaker = document.querySelector('#phraseTMaker')
 let submit = document.querySelector('#submit')
 let notVisible = document.getElementById('notVisible') /*the whole div*/
-let notVisibleLabel = document.getElementById('notVisibleLabel') /*label for this div*/
 let add = document.querySelector('#add') /*shows this div */
 
 /*actions with arrays and words*/
@@ -150,9 +149,9 @@ function currentM(){
 
 /*shows adding form*/
 function show(){
-    notVisible.className = "input-group mb-3 visible"
-    add.className = "btn btn-dark invisible"
-    notVisibleLabel.className = 'visible'
+    notVisible.style.display = 'block'
+    add.style.display = 'none'
+    add.style.marginBottom = '0vh'
 }
 
 /*shows the current word*/
@@ -195,26 +194,26 @@ list.onclick = function(event){
 }
 
 function addition(){
-    if (!maker1.value || !maker2.value){
+    if (!wordMaker.value || !transMaker.value){
         alert('Необходимо заполнить все обязательные поля')
     }
     else{
         objNew = {}
-        objNew['word'] = maker1.value
-        objNew['trans'] = maker2.value
-        objNew['phrase'] = maker3.value
-        objNew['phraseT'] = maker4.value
+        objNew['word'] = wordMaker.value
+        objNew['trans'] = transMaker.value
+        objNew['phrase'] = phraseMaker.value
+        objNew['phraseT'] = phraseTMaker.value
         objNew['turn'] = false
         current = 0
         mainArr.unshift(objNew)
-        localStorage.setItem(`${maker1.value}`,`${maker1.value},${maker2.value},${maker3.value},${maker4.value},false,${mainArrStr}`)
-        maker1.value = ''
-        maker2.value = ''
-        maker3.value = ''
-        maker4.value = ''
-        notVisible.className = "input-group mb-3 invisible"
-        add.className = "btn btn-dark visible"
-        notVisibleLabel.className = 'invisible'
+        localStorage.setItem(`${wordMaker.value}`,`${wordMaker.value},${transMaker.value},${phraseMaker.value},${phraseTMaker.value},false,${mainArrStr}`)
+        wordMaker.value = ''
+        transMaker.value = ''
+        phraseMaker.value = ''
+        phraseTMaker.value = ''
+        notVisible.style.display = 'none'
+        add.style.display = 'block'
+        add.style.marginBottom = '14vh'
         render()
     }
 }

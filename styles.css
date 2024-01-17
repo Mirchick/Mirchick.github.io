@@ -85,33 +85,21 @@
         font-size: 3.5vw;
     }
     #add{
+        padding-top: 8vh;
         display: block;
         width: 40vw;
         max-width: 40vw;
         margin-left: auto;
         margin-right: auto;
-    }
-    #maker1,#maker2,#maker3,#maker4{
-        font-size: 2.5vw;
-    }
-    #l1{
-        font-size:2vw;
-        padding-left:1.5vw
-    }
-    #l2{
-        font-size:2vw;
-        padding-left:3vw
-    }
-    #l3{
-        font-size:2vw;
-        padding-left:0.5vw
-    }
-    #l4{
-        font-size:2vw;
-        padding-left:3vw
+        margin-bottom: 14vh;
     }
     #notVisible{
-        max-width: 96vw;
+        display: none;
+        margin-bottom: 4vh;
+        padding-top: 6vh;
+    }
+    .input-group.makers{
+        max-width: 80vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -253,9 +241,6 @@
     }
     .secondOption{
         display: inline;
-    }
-    #container{
-        margin-top: 14vh;
     }
     .fonn{
         height: 100vh;
