@@ -1,149 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Learn English</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel = 'stylesheet'>
-  <link href = 'styles.css' rel = 'stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-  <div style="background-color: #f5fcff;background-attachment: scroll;background-size: contain;">
-    <div id="block1" style="max-width: 100vw;">
-      <p class="firstDescription">Чем удобен наш сайт по изучению английского языка:</p>
-      <div class="d-flex justify-content-center">
-        <div id = 'chCl' class="card border-dark text-dark bg-light mb-3">
-          <div id = 'cardExample' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-            <h1 id = 'exampleWord' class ="card-title text-center">To take</h1>
-            <p id = 'examplePhrase' class="card-text text-center">To take a hat</p>
-          </div>
+    <div id="block1">
+        <div id="div1" style="display: flex;justify-content: center;">
+            <h1 id="head1">Превосходный выбор кофе!</h1>
         </div>
-        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-          <p id = 'text1_2' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете узнать значение любого незнакомого слова с помощью клика по карточке. Попробуйте кликнуть по карточке слева</p>
+        <div id="div2">
+            <img id = 'image1' src="images/image1.jpg">
+            <p id="par1"><b>Только сегодня скидка на все виды кофе!</b></p>
         </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div id = 'chCl1' class="card border-dark text-dark bg-light mb-3">
-          <div id = 'cardExample1' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-            <h1 id = 'exampleWord1' class ="card-title text-center">To live</h1>
-            <p id = 'examplePhrase1' class="card-text text-center">To live long</p>
-            <button id = 'exampleButton' onclick = replacing()>✓</button>
-          </div>
+        <div id="div3">
+            <img id = 'image3' src="images/image3.jpg">
+            <p id="par2"><b>Только <br> лучшие ингредиенты в каждой чашке</b></p>
         </div>
-        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-          <p id = 'text1_3' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Вы можете отмечать слова, которые уже знаете, нажав на галочку, которая относится к этой карточке. Попробуйте нажать на галочку</p>
+        <div id="div4">
+            <img id = 'image2' src="images/image2.jpg">
+            <p id="par3"><b>Круглосуточная доставка для Вашего удовольствия</b></p>
         </div>
-      </div>
-  
-      <div class="d-flex justify-content-center">
-        <a class = 'try' href="words.html"><div id = 'chCl2' class="card border-dark text-dark bg-light mb-3">
-          <div id = 'cardExample2' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-          </div>
-        </div></a>
-        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-          <p id = 'text1_4' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">А ещё Вы можете добавлять свои слова на вкладке "Слова", чтобы макимально персонализировать своё обучение под себя</p>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center" style="padding-bottom: 10vh;">
-        <a class = 'try' href="test.html"><div id = 'chCl3' class="card border-dark text-dark bg-light mb-3">
-          <div id = 'cardExample3' class="card-body" style = '-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>
-          </div>
-        </div></a>
-        <div class="card border-dark text-bg-secondary mb-3" style = "background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);">
-          <p id = 'text1_5' style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">Перейдя на вкладку "Тесты" Вы сможете проверить свои знания и увидеть результат, который в процентах покажет Ваш текущий прогресс</p>
-        </div>
-      </div>
     </div>
-    <div id="block2" style="height: 100vh;">
-      <div id = 'words' class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Категории слов
-        </button>
-        <ul class="dropdown-menu">
-          <li><button class="dropdown-item" onclick="mainArr = verbs,mainArr = verbs,mainArrStr = 'verbs',mainArrStrT = 'Глаголы',current = 0,render()">Глаголы</button></li>
-          <li><button class="dropdown-item" onclick="mainArr = animals,mainArr = animals,mainArrStr = 'animals',mainArrStrT = 'Животные',current = 0,render()">Животные</button></li>
-          <li><button class="dropdown-item" onclick="mainArr = professions,mainArr = professions,mainArrStr = 'professions',mainArrStrT = 'Профессии',current = 0,render()">Профессии</button></li>
-          <li><button class="dropdown-item" onclick="mainArr = food,mainArr = food,mainArrStr = 'food',mainArrStrT = 'Еда',current = 0,render()">Еда</button></li>
-          <li><button class="dropdown-item" onclick="mainArr = school,mainArr = school,mainArrStr = 'school',mainArrStrT = 'Школа',current = 0,render()">Школа</button></li>
-          <li><button class="dropdown-item" onclick="mainArr = human,mainArr = human,mainArrStr = 'human',mainArrStrT = 'Человек',current = 0,render()">Человек</button></li>
-          <li><button class="dropdown-item" onclick="mainArr = properties,mainArr = properties,mainArrStr = 'properties',mainArrStrT = 'Свойства',current = 0,render()">Свойства</button></li>
-        </ul>
-      </div>
-      <div id = 'add'>
-        <button class="btn btn-dark visible" type="button" onclick = show()>Добавить слово</button>
-      </div>
 
-      <div id="notVisible">
-        <div class="input-group makers">
-          <input type="text" aria-label="First name" id="wordMaker" placeholder="Слово (англ)" class="form-control">
+    <div id="block2">
+        <h1 id="hMenu">МЕНЮ</h1>
+        <button id="but1">Корзина</button>
+        <div id="menu">
+
         </div>
-        <div class="input-group makers">
-          <input type="text" aria-label="Last name" id="transMaker" placeholder="Перевод" class="form-control">
-        </div>
-        <div class="input-group makers">
-          <input type="text" aria-label="Last name" id="phraseMaker" placeholder="Фраза (англ)   *по желанию" class="form-control">
-        </div>
-        <div class="input-group makers">
-          <input type="text" aria-label="Last name" id="phraseTMaker" placeholder="Перевод фразы   *по желанию" class="form-control">
-        </div>
-        <div style="display: flex; justify-content: center;">
-          <button id = 'doneButton' class="btn btn-dark visible" style = 'width: 80vw;' type="button" onclick = addition()>Готово!</button>
-        </div>
-      </div>
-      
-      <div id = 'container'>
-      </div>
     </div>
-    <div id="block3" style="height: 100vh;">
-      <div id = 'words1' class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Категории слов
-        </button>
-        <ul class="dropdown-menu">
-          <li><button class="dropdown-item" onclick="gray(0),addTestCategory(arrVerbs)">Глаголы<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(1),addTestCategory(arrAnimals)">Животные<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(2),addTestCategory(arrProfessions)">Профессии<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(3),addTestCategory(arrFood)">Еда<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(4),addTestCategory(arrSchool)">Школа<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(5),addTestCategory(arrHuman)">Человек<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-          <li><button class="dropdown-item" onclick="gray(6),addTestCategory(arrProperties)">Свойства<span class = 'firstOption' style="margin-left: 4vw;">✔</span></button></li>
-        </ul>
-      </div>
-      <div id = 'test'>
-        <div>
-          <p id = 'fin'></p>
-        </div>
-        <div id = 'progress'>
-        </div>
-        <div id = 'testStart' class="d-grid col-8 mx-auto">
-          <button id = 'start' class="btn btn-primary" onclick = startTest()>Начать тест</button>
-        </div>
-        <div id="listTest">
-        </div>
-        <div id = 'checking' class="input-group mb-3 invisible">
-          <input type="text" id = 'inter' class="form-control" placeholder="Введите перевод" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-dark" id="button-addon2" onclick = check() type="button">Далее</button>
-        </div>
-        <div class="d-grid col-8 mx-auto">
-          <a href="#start"><button id = 'finish' class="btn btn-primary" onclick = finishTest()>Завершить тест</button></a>
-        </div>
-      </div>
+
+    <div id="block3">
+        
     </div>
-    <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
-      <input onclick = 'changeBlocks(block2,but1),finishTest()' type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-      <label id = 'but1' class="btn btn-primary help" for="btnradio1">Слова</label>
-    
-      <input onclick = 'changeBlocks(block1,but2),finishTest()' type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-      <label id = 'but2' class="btn btn-primary help" for="btnradio2">Главная</label>
-    
-      <input onclick = 'changeBlocks(block3,but3)' type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-      <label id = 'but3' class="btn btn-primary help" for="btnradio3">Тесты</label>
+
+    <div id="block4">
+        
     </div>
-  </div>
-  <script src = 'java.js'></script>
-  <script src = 'javatest.js'></script>
-  <script src = 'words.js'></script>
-  <script src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'></script>
+
+    <div id="basket">
+        
+    </div>
+
+    <div id="div5">
+        <button id="but21" onclick="showBlock(block2)">Меню</button>
+        <button id="but22" onclick="showBlock(block3)">Кафе</button>
+        <button id="but23" onclick="showBlock(block4)">О нас</button>
+    </div>
+    <script src="java.js"></script>
 </body>
 </html>
