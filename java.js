@@ -1,41 +1,50 @@
 let menu = document.getElementById('menu')
+let kafe = document.getElementById('kafe')
+let basket = document.getElementById('basket')
 let block1 = document.getElementById('block1')
 let block2 = document.getElementById('block2')
 let block3 = document.getElementById('block3')
+let block4 = document.getElementById('block4')
+let block5 = document.getElementById('block5')
+let basketEmpty = document.getElementById('basketEmpty')
+let basketItems = []
 
-
-function add(src,price,name,text,index){
+function add(src,name,text,index,price){
     menu.insertAdjacentHTML("beforeend",`<div class = 'menuMainDiv'>
-    <img src = ${src} class = 'menuImg'><p class = 'menuPrice'>${price}</p>
-    <div class = 'menuTextDiv'><p class = 'menuName'>${name}</p><p class = 'menuText'>${text}</p></div>
+    <img src = ${src} class = 'menuImg'><p data-index = ${index} class = 'menuPrice'>${price}</p>
+    <div class = 'menuTextDiv'><p data-index = ${index} class = 'menuName'>${name}</p><p class = 'menuText'>${text}</p></div>
     <div data-index = ${index} class = 'menuButtons'><button data-type = 'minus' class = 'menuMinus' onclick = 'minusCount(${index})'>-</button><p data-index = ${index} class = 'menuCount'></p>
     <button data-type = 'plus' data-index = ${index} onclick = 'plusCount(${index})' class = 'menuPlus'><b>+</b></button></div><button data-type = 'add' data-index = ${index} class = 'addButton'>Добавить</button></div>`)
 }
-add('/images/lat.jpg','199p','Латте','Это кофе с молоком, но мы говорим латте, чтобы вы платили больше.',1)
-add('/images/cap.jpg','259p','Капучино','Кофе как кофе, но бармен нарисует вам здоровенный член (на лбу)',2)
-add('/images/esp.jpg','99p','Эспрессо','Господи, да не мучайся ты, возьми просто сок ну или латте',3)
-add('/images/gor.jpg','229p','Шоколад','Попросил больше маршмелло и не допил-остаток уносишь в заднице.',4)
-add('/images/raf.jpg','359p','Раф','Как говорит собачка? Раф! Поэтому цена и кусается',5)
-add('/images/pep.jpg','99p','Пепси','В кофейню за пепси? Оплачивай и чтоб я тебя больше не видел. Чмошник',6)
+add('/images/lat.jpg','Латте','Это кофе с молоком, но мы говорим латте, чтобы вы платили больше.',1,199)
+add('/images/cap.jpg','Капучино','Кофе как кофе, но бармен нарисует вам здоровенный писюн  (на лбу)',2,259)
+add('/images/esp.jpg','Эспрессо','Господи, да не мучайся ты, возьми просто сок ну или латте',3,99)
+add('/images/gor.jpg','Шоколад','Попросил больше маршмелло и не допил-остаток уносишь в заднице.',4,229)
+add('/images/raf.jpg','Раф','Как говорит собачка? Раф! Поэтому цена и кусается',5,359)
+add('/images/pep.jpg','Пепси','В кофейню за пепси? Оплачивай и чтоб я тебя больше не видел. Чмошник',6,99)
 menu.insertAdjacentHTML("beforeend",`<div style = 'height:15vw'></div>`)
 function showBlock(block){
     block1.style.display = 'none'
     block2.style.display = 'none'
     block3.style.display = 'none'
+    block4.style.display = 'none'
+    block5.style.display = 'none'
     block.style.display = 'block'
 }
 
 let menuButtons = document.getElementsByClassName('menuButtons')
 let addButtons = document.getElementsByClassName('addButton')
 let menuCount = document.getElementsByClassName('menuCount')
+let menuName = document.getElementsByClassName('menuName')
+let prices = document.getElementsByClassName('menuPrice')
+console.log(prices)
+
 for (elem of menuButtons){
     elem.style.display = 'none'
 }
 menu.onclick = function(event){
     if (event.target.dataset.type == 'add'){
-        console.log('yy')
         let index1 = event.target.dataset.index
-
         let menuButtons = document.getElementsByClassName('menuButtons')
         for (elem of menuButtons){
             if (elem.dataset.index == index1){
@@ -52,18 +61,13 @@ menu.onclick = function(event){
                 elem.innerHTML = 1
             }
         }
-    }
-    /*else if (event.target.dataset.type == 'plus'){
-        console.log('ff')
-        let index1 = event.target.dataset.index
-        for (elem of menuCount){
-            if (elem.dataset.index == index1){
-                let count = elem.value
-                console.log(count)
-                elem.innerHTML = ++count
+        for (elem2 of menuName){
+            if (elem2.dataset.index == index1){
+                basketItems.push(elem2.innerHTML)
             }
         }
-    }*/
+        console.log(basketItems)
+    }
 }
 function plusCount(id){
     for (elem of menuCount){
@@ -71,6 +75,11 @@ function plusCount(id){
             elem.innerHTML = ++elem.innerHTML
             if (elem.innerHTML >= 10){
                 alert('Палец сломаю.')
+            }
+        }
+        for (elem2 of menuName){
+            if (elem2.dataset.index == id && elem.dataset.index == id){
+                basketItems.push(elem2.innerHTML)
             }
         }
     }
@@ -92,5 +101,68 @@ function minusCount(id){
                 }
             }
         }
+        for (elem2 of menuName){
+            if (elem2.dataset.index == id && elem.dataset.index == id){
+                let word = elem2.innerHTML
+                let wordFound = basketItems.indexOf(word)
+                basketItems.splice(wordFound,1)
+            }
+        }
     }
 }
+function addKafe(src,name,text,index){
+    kafe.insertAdjacentHTML("beforeend",`<div class = 'kafeMainDiv'>
+    <p class = 'kafeName'>${name}</p><img src = ${src} class = 'kafeImg'>
+    <div class = 'kafeTextDiv'><p class = 'kafeText'>${text}</p></div>
+    <div data-index = ${index} class = 'kafeButton'>
+    <button data-type = 'sign' data-index = ${index} class = 'signButton'>Записаться</button></div></div>`)
+}
+function renderBasket(){
+    basket.innerHTML = ''
+    let countedDrinks = {}
+    if (basketItems.length > 0){
+        for (someDrink of basketItems){
+            if (countedDrinks[someDrink]){
+                countedDrinks[someDrink] += 1
+            }
+            else{
+                countedDrinks[someDrink] = 1
+            }
+        }
+        basket.insertAdjacentHTML("beforeend",`<div style = 'height:8vw'></div>`)
+        let summa = 0
+        for (drink in countedDrinks){
+            if(drink == "Латте"){
+                summa += countedDrinks[drink]*199
+            }
+            else if(drink == 'Капучино'){
+                summa += countedDrinks[drink]*259
+            }
+            else if(drink == 'Эспрессо'){
+                summa += countedDrinks[drink]*99
+            }
+            else if(drink == 'Шоколад'){
+                summa += countedDrinks[drink]*229
+            }
+            else if(drink == 'Раф'){
+                summa += countedDrinks[drink]*359
+            }
+            else if(drink == 'Пепси'){
+                summa += countedDrinks[drink]*99
+            }
+        }
+        for (drink in countedDrinks){
+            basket.insertAdjacentHTML("beforeend",`<div class = 'basketDrinkDiv'><p class = 'basketDrink'>${drink}</p><p class = 'basketDrinkCount'>${countedDrinks[drink]}</p></div>`)
+        }
+        basket.insertAdjacentHTML("beforeend",`<div class = 'basketDrinkDiv'><p class = 'sum'>Итого:</p><p class = 'basketDrinkSum'>${summa}р</p></div>`)
+    }
+    else{
+        basket.insertAdjacentHTML("beforeend",`<div><p id="basketEmpty">Корзина пуста</p></div>`)
+    }
+}
+
+addKafe('/images/kafe1.jpg','кафе на Василеостровской','Самое лучшее кафе в центре Северной Столицы, приходите и пейте кофе я вас люблю',1)
+addKafe('/images/kafe2.jpg','кафе на Академической','Самое худшее кафе в центре Северной Столицы, приходите и пейте говно реально я вас ненавижу господи',1)
+addKafe('/images/kafe3.jpg','кафе на Невском','Самое лучшее кафе в центре Северной Столицы, приходите и пейте кофе я вас люблю',1)
+addKafe('/images/kafe4.jpg','кафе на Адмиралтейской','Самое худшее кафе в центре Северной Столицы, приходите и пейте говно реально я вас ненавижу господи',1)
+kafe.insertAdjacentHTML("beforeend",`<div style = 'height:15vw'></div>`)
