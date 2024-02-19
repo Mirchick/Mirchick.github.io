@@ -38,6 +38,7 @@
         <div id="kafe">
 
         </div>
+        <button onclick="sign()"><img id = 'signImage' src="/images/sign2.png"></button>
     </div>
 
     <div id="block4">
@@ -47,6 +48,23 @@
     <div id="block5">
         <div id="basket">
 
+        </div>
+    </div>
+
+    <div id="block6">
+        <div style="display:flex;justify-content: center;flex-direction: column;align-items: center;">
+            <h1 id="bookText">Бронирование столика</h1>
+            <select name="kafes" id="kafe-select">
+                <option selected="true" disabled="disabled" value="Выберите кафе">Выберите кафе</option>
+                <option value="Кафе на Василеостровской">Кафе на Василеостровской</option>
+                <option value="Кафе на Академической">Кафе на Академической</option>
+                <option value="Кафе на Невском">Кафе на Невском</option>
+                <option value="Кафе на Адмиралтейской">Кафе на Адмиралтейской</option>
+            </select>
+            <input required id = 'dateForm' type="datetime-local"> 
+            <input required placeholder="Количество гостей (1-10)" id="countForm" min = '1' max="10" type="number">
+            <input required id="telForm" type="number" min="70000000000" max="79999999999" maxlength="11" placeholder="79999999999" pattern="([7]{1})([\d]{10})">
+            <button id="bookButton">Забронировать</button>
         </div>
     </div>
 

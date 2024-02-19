@@ -1,13 +1,27 @@
 let menu = document.getElementById('menu')
 let kafe = document.getElementById('kafe')
+let Sign = document.getElementById('Sign')
 let basket = document.getElementById('basket')
 let block1 = document.getElementById('block1')
 let block2 = document.getElementById('block2')
 let block3 = document.getElementById('block3')
 let block4 = document.getElementById('block4')
 let block5 = document.getElementById('block5')
+let block6 = document.getElementById('block6')
 let basketEmpty = document.getElementById('basketEmpty')
 let basketItems = []
+let telForm = document.getElementById('telForm')
+
+
+function parsePhone(){
+    if (telForm.validity.valid){
+        let nomer = telForm.value
+        alert(nomer)
+        newNomer = '+' + nomer[0] + ' (' + nomer.slice(1,4) + ') ' + nomer.slice(4,7) + '-' + nomer.slice(7,9) + '-' + nomer.slice(9)
+        telForm.value = newNomer
+    }
+}
+
 
 function add(src,name,text,index,price){
     menu.insertAdjacentHTML("beforeend",`<div class = 'menuMainDiv'>
@@ -29,6 +43,7 @@ function showBlock(block){
     block3.style.display = 'none'
     block4.style.display = 'none'
     block5.style.display = 'none'
+    block6.style.display = 'none'
     block.style.display = 'block'
 }
 
@@ -37,7 +52,7 @@ let addButtons = document.getElementsByClassName('addButton')
 let menuCount = document.getElementsByClassName('menuCount')
 let menuName = document.getElementsByClassName('menuName')
 let prices = document.getElementsByClassName('menuPrice')
-console.log(prices)
+
 
 for (elem of menuButtons){
     elem.style.display = 'none'
@@ -66,7 +81,6 @@ menu.onclick = function(event){
                 basketItems.push(elem2.innerHTML)
             }
         }
-        console.log(basketItems)
     }
 }
 function plusCount(id){
@@ -115,7 +129,7 @@ function addKafe(src,name,text,index){
     <p class = 'kafeName'>${name}</p><img src = ${src} class = 'kafeImg'>
     <div class = 'kafeTextDiv'><p class = 'kafeText'>${text}</p></div>
     <div data-index = ${index} class = 'kafeButton'>
-    <button data-type = 'sign' data-index = ${index} class = 'signButton'>Записаться</button></div></div>`)
+    </div></div>`)
 }
 function renderBasket(){
     basket.innerHTML = ''
@@ -166,3 +180,10 @@ addKafe('/images/kafe2.jpg','кафе на Академической','Само
 addKafe('/images/kafe3.jpg','кафе на Невском','Самое лучшее кафе в центре Северной Столицы, приходите и пейте кофе я вас люблю',1)
 addKafe('/images/kafe4.jpg','кафе на Адмиралтейской','Самое худшее кафе в центре Северной Столицы, приходите и пейте говно реально я вас ненавижу господи',1)
 kafe.insertAdjacentHTML("beforeend",`<div style = 'height:15vw'></div>`)
+
+function sign(){
+    showBlock(block6)
+    
+}
+
+

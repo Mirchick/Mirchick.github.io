@@ -203,15 +203,15 @@ legend {
     margin-left: 1vw;
 }
 
-#block2,#block3,#block4,#block5{
+#block2,#block3,#block4,#block5,#block6{
     display: none;
 }
-#block2,#block3,#block5{
+#block2,#block3,#block5,#block6{
     background-attachment: fixed;
     background-size: cover;
     background-image: linear-gradient(#B15124,#ff8000);
 }
-#block5{
+#block5,#block6{
     height: 100vh;
 }
 
@@ -435,9 +435,68 @@ legend {
     bottom: 4vw;
     right: 6vw;
 }
-.signButton{
-    border: 0.3vw solid black;
-    padding: 1vw;
-    background-image: radial-gradient(#f0c078,#ed9c21);
-    border-radius: 2vw;
+#signImage{
+    width: 20vw;
+    border-radius: 4vw;
+    position: fixed;
+    bottom: 20vw;
+    right: 6vw;
+    border: 1vw solid white;
 }
+#bookText{
+    font-size: 6vw;
+    margin-top: 10vw;
+    background-color: #35170C;   
+    color: white;
+	border-radius: 1vw;
+    margin-bottom: 15vw;
+    text-align: center;
+    padding: 2vw;
+}
+select{
+    box-sizing: border-box;
+    width: 80vw;
+    font-size: 5vw;
+    padding: 1vw;
+    background-color: #eee;   
+	border: 0.2vw solid #ddd;
+	border-radius: 0.5vw;
+    margin-bottom: 15vw;
+}
+#dateForm,#countForm{
+    box-sizing: border-box;
+    font-size: 5vw;
+    padding: 1vw;
+    width: 80vw;
+    background-color: #eee;   
+	border: 0.2vw solid #ddd;
+	border-radius: 0.5vw;
+    margin-bottom: 15vw;
+}
+#countForm:invalid{
+    background-color: #FF4040;
+}
+#telForm{
+    box-sizing: border-box;
+    font-size: 5vw;
+    padding: 1vw;
+    width: 80vw;
+    background-color: #eee;   
+	border: 0.2vw solid #ddd;
+	border-radius: 0.5vw;
+    margin-bottom: 15vw;
+}
+#telForm:invalid{
+    background-color: #FF4040;
+}
+#telForm:valid,#countForm:valid{
+    background-color: #ddffdd;
+}
+#bookButton{
+    font-size: 8vw;
+    padding: 4vw;
+    color: white;
+    border-radius: 3vw;
+    background-color: #35170C;
+}
+
