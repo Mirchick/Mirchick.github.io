@@ -168,17 +168,17 @@ function renderBasket(){
         for (drink in countedDrinks){
             basket.insertAdjacentHTML("beforeend",`<div class = 'basketDrinkDiv'><p class = 'basketDrink'>${drink}</p><p class = 'basketDrinkCount'>${countedDrinks[drink]}</p></div>`)
         }
-        basket.insertAdjacentHTML("beforeend",`<div class = 'basketDrinkDiv'><p class = 'sum'>Итого:</p><p class = 'basketDrinkSum'>${summa}р</p></div>`)
+        basket.insertAdjacentHTML("beforeend",`<div class = 'basketDrinkDivSum'><p class = 'sum'>Итого:</p><p class = 'basketDrinkSum'>${summa}р</p></div>`)
     }
     else{
         basket.insertAdjacentHTML("beforeend",`<div><p id="basketEmpty">Корзина пуста</p></div>`)
     }
 }
 
-addKafe('/images/kafe1.jpg','кафе на Василеостровской','Самое лучшее кафе в центре Северной Столицы, приходите и пейте кофе я вас люблю',1)
-addKafe('/images/kafe2.jpg','кафе на Академической','Самое худшее кафе в центре Северной Столицы, приходите и пейте говно реально я вас ненавижу господи',1)
-addKafe('/images/kafe3.jpg','кафе на Невском','Самое лучшее кафе в центре Северной Столицы, приходите и пейте кофе я вас люблю',1)
-addKafe('/images/kafe4.jpg','кафе на Адмиралтейской','Самое худшее кафе в центре Северной Столицы, приходите и пейте говно реально я вас ненавижу господи',1)
+addKafe('/images/kafe1.jpg','кафе на Василеостровской','Самое лучшее кафе в центре Северной Столицы, приходите и пейте кофе я вас люблю. До встречи!',1)
+addKafe('/images/kafe2.jpg','кафе на Академической','Изысканное заведение с новым ремонтом и огромным выбором напитков на любой вкус. Ждём Вас в кафе на Академической!',1)
+addKafe('/images/kafe3.jpg','кафе на Невском','Расположенное в самом центре города, данное заведение Вас очень обрадует видами и очень огорчит ценами. Приходите!',1)
+addKafe('/images/kafe4.jpg','кафе на Адмиралтейской','Это заведение одно из самых старых в нашем любимом городе. Изначально Петр 1 увидел наше кафе и только потом болото.',1)
 kafe.insertAdjacentHTML("beforeend",`<div style = 'height:15vw'></div>`)
 
 function sign(){
